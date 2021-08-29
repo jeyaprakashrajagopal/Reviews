@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="reviewDetailsItem"
+            type="com.anonymous.reviews.model.Review" />
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:id="@+id/reviewDetailsFragmentContainer"
+            tools:context=".reviewmodule.BerlinTravelDestinationReviews">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/reviewDetailsUserImage"
+                android:layout_width="144dp"
+                android:layout_height="144dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                app:holderItemImage="@{reviewDetailsItem.Author.photo}"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/reviewDetailsName"
+                android:clickable="false"
+
+                app:srcCompat="@drawable/ic_launcher_circle_default_img_background"
+                app:shapeAppearance="@style/ShapeAppearance.App.CircleImageView"
+                app:layout_constraintVertical_bias="0.0"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/reviewDetailsName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{reviewDetailsItem.Author.fullName}"
+                tools:text="@string/review_text_label"
+                android:clickable="false"
+
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reviewDetailsUserImage"
+            />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/reviewDetailsCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{reviewDetailsItem.Author.country}"
+                tools:text="@string/review_text_label"
+                android:textColor="@color/black_70"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:clickable="false"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reviewDetailsName"
+                />
+
+            <RatingBar
+                android:id="@+id/reviewDetailsRating"
+                style="@style/customizedRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@color/yellow"
+                android:numStars="5"
+                android:rating="@{reviewDetailsItem.rating}"
+                android:clickable="false"
+
+                android:theme="@style/RatingBar"
+                android:layout_marginStart="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintEnd_toStartOf="@+id/reviewDetailsDate"
+                app:layout_constraintTop_toBottomOf="@+id/reviewDetailsCountry"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/reviewDetailsDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@{reviewDetailsItem.getCreated}"
+                android:textColor="@color/black_70"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:inputType="text"
+                tools:text="@string/review_text_label"
+                android:clickable="false"
+
+                android:maxLines="1"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/reviewDetailsRating"
+                app:layout_constraintBottom_toBottomOf="@id/reviewDetailsRating"
+                app:layout_constraintWidth_percent="0.5"
+                android:textAlignment="textEnd"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/reviewDetailsMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{reviewDetailsItem.message}"
+                tools:text="@string/review_description_unavailable_err_text_label"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold"
+
+                android:layout_margin="20dp"
+                android:clickable="false"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reviewDetailsRating"
+                app:layout_constraintVertical_bias="0.0"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

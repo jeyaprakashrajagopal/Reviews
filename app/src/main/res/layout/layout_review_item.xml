@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="reviewItem"
+            type="com.anonymous.reviews.model.Review" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reviewItemContainer"
+
+        android:clickable="true"
+        android:focusable="true"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/reviewItemCL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="0dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/reviewDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                tools:text="@string/review_text_label"
+                android:text="@{reviewItem.getCreated}"
+                android:textSize="14sp"
+                android:textColor="@color/gray"
+                app:layout_constraintBottom_toTopOf="@+id/reviewRating"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RatingBar
+                android:id="@+id/reviewRating"
+                style="@style/customizedRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/yellow"
+                android:numStars="5"
+                android:rating="@{reviewItem.rating}"
+                android:theme="@style/RatingBar"
+                app:layout_constraintBottom_toTopOf="@+id/reviewDescription"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reviewDate" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/reviewDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:clickable="false"
+                android:focusable="false"
+
+                android:text="@{reviewItem.message}"
+                tools:text="@string/review_description_unavailable_err_text_label"
+
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reviewRating" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/reviewedByImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="16dp"
+                app:holderItemImage="@{reviewItem.Author.photo}"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/reviewedBy"
+                app:layout_constraintTop_toBottomOf="@+id/reviewDescription"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:srcCompat="@drawable/ic_launcher_circle_default_img_foreground"
+                app:shapeAppearance="@style/ShapeAppearance.App.CircleImageView"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/reviewedBy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:textSize="14sp"
+                android:text="@string/reviewed_by_text_label"
+                android:textColor="@color/gray_80"
+                app:layout_constraintBottom_toTopOf="@+id/reviewedFrom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/reviewedByImage"
+                app:layout_constraintTop_toTopOf="@+id/reviewedByImage" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/reviewedFrom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp"
+                android:ellipsize="end"
+                android:maxLines="4"
+
+                android:text='@{(reviewItem.Author.fullName + "-" + reviewItem.Author.country)}'
+                tools:text="@string/reviewed_by_and_from_text_label"
+                android:textSize="16sp"
+                android:textColor="@color/black_70"
+                app:layout_constraintBottom_toBottomOf="@+id/reviewedByImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/reviewedByImage"
+                app:layout_constraintTop_toBottomOf="@+id/reviewedBy" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/reviewItemCL"
+            android:background="@color/lt_gray"
+             />
+
+    </RelativeLayout>
+</layout>

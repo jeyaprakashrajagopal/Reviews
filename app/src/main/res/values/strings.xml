@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Reviews</string>
+
+    <string name="review_text_label">Review</string>
+
+    <string name="reviewed_by_text_label">reviewed by</string>
+    <string name="reviewed_by_and_from_text_label">Anonymous - DummyCountry</string>
+    <string name="review_description_unavailable_err_text_label">Review description unavilable</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

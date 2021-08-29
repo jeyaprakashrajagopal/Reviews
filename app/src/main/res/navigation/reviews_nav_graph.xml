@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/reviews_nav_graph"
+    app:startDestination="@+id/reviewsFragment">
+
+    <fragment
+        android:id="@+id/reviewsFragment"
+        android:name="com.anonymous.reviews.BerlinTravelDestinationReviews"
+        >
+        <action
+            android:id="@+id/actionReviewsFragmentToReviewDetailsFragment"
+
+            app:enterAnim="@animator/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:destination="@+id/reviewDetailsFragment"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/reviewDetailsFragment"
+        android:name="com.anonymous.reviews.BerlinTravelDestinationReviewDetails"
+        >
+        <argument
+            android:name="selectedReview"
+            app:argType="com.anonymous.reviews.model.Review"
+            />
+
+        <action
+            android:id="@+id/ReviewDetailsFragmentToactionReviewsFragment"
+            app:enterAnim="@animator/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@+id/reviewsFragment"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+
+</navigation>

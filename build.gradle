@@ -1,0 +1,69 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = '1.5.30-M1'
+    ext {
+
+        // SDK tools
+        minSDKVersion = 21
+        targetSDKVersion = 30
+        compileSDKVersion = 30
+
+        appCompatVersion = "1.3.1"
+        androidCoreVersion = "1.6.0"
+
+        // Retrofit version
+        retrofitVersion = "2.9.0"
+
+        // Fragment related
+        fragmentVersion = "1.4.0-alpha05"
+        lifecycleVersion = "2.4.0-alpha03"
+
+        // Layout related
+        contraintLayoutVersion = "2.0.4"
+
+        //Navigation component related
+        navigationVersion = "2.3.5"
+        navigationFragmentVersion = "2.3.5"
+        navigationUIVersion = "2.3.5"
+        fragmentTestVersion = "1.3.6"
+        fragmentVersion = "1.3.6"
+
+        // hilt version
+        hilt_version = "2.37"
+        //Material version
+        materialDesignVersion = "1.4.0"
+
+        // tests
+        testRunnerRulesVersion = "1.4.0"
+        espressoCoreVersion = "3.4.0"
+        espressoVersion = "3.4.0"
+        junitExtVersion = "1.1.3"
+        junit4Version = "4.13.2"
+        mockitoVersion = "2.19.0"
+        mockkVersion= "1.9.3"
+        coroutinesTestVersion ="1.5.1"
+        hiltTestVersion = "2.28-alpha"
+
+        // Glide version
+        glideVersion = "4.12.0"
+
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.0.0"
+
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.21"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath("androidx.navigation:navigation-safe-args-gradle-plugin:$navigationVersion")
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
