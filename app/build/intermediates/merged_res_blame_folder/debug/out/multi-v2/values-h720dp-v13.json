@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/3027602b1fec35afdb961e93f9123cbe/transformed/appcompat-1.2.0/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "66",
+                        "endOffsets": "117"
+                    }
+                }
+            ]
+        }
+    ]
+}

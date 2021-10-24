@@ -5,11 +5,12 @@ import androidx.lifecycle.ViewModelProvider
 import com.anonymous.reviews.model.ReviewsViewModel
 import com.anonymous.reviews.reviewmodule.apiservice.ReviewsApiServiceImplementation
 import com.anonymous.reviews.reviewmodule.repository.ReviewsRepository
+import javax.inject.Inject
 
 /**
  * It is needed to send parameters to the viewModel
  */
-class ReviewsViewModelFactory constructor(
+class ReviewsViewModelFactory @Inject constructor(
               val reviewsAPIServiceImplementation: ReviewsApiServiceImplementation)
         : ViewModelProvider.Factory {
 

@@ -1,0 +1,90 @@
+[
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/layout_layout_actionbar_customized.xml.flat",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/layout/layout_actionbar_customized.xml"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/navigation_reviews_nav_graph.xml.flat",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/navigation/reviews_nav_graph.xml"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/layout_fragment_berlin_travel_destination_reviews.xml.flat",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/layout/fragment_berlin_travel_destination_reviews.xml"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/layout_fragment_review_details.xml.flat",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/layout/fragment_review_details.xml"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/drawable_ic_launcher_circle_default_img_foreground.xml.flat",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/drawable/ic_launcher_circle_default_img_foreground.xml"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/layout_layout_review_item.xml.flat",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/layout/layout_review_item.xml"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/drawable_ic_launcher_circle_default_img_background.xml.flat",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/drawable/ic_launcher_circle_default_img_background.xml"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/mipmap-hdpi/ic_launcher.webp"
+    }
+]

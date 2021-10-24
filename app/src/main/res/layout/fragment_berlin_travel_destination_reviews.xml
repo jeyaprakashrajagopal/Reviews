@@ -9,26 +9,18 @@
         android:layout_height="match_parent"
         android:id="@+id/reviewsContainerFragment"
         >
-
-        <androidx.core.widget.NestedScrollView
-            android:id="@+id/reviewsNSV"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reviewsRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:fillViewport="true"
+            android:nestedScrollingEnabled="false"
 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/progressGetReviewItems"
             app:layout_constraintVertical_bias="0"
-            >
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/reviewsRecyclerView"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                />
-        </androidx.core.widget.NestedScrollView>
+            />
         <ProgressBar
             android:id="@+id/progressGetReviewItems"
             android:layout_width="match_parent"
@@ -36,7 +28,7 @@
             android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/reviewsNSV"
+            app:layout_constraintTop_toBottomOf="@+id/reviewsRecyclerView"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHeight_percent="0.05"
 

@@ -4,11 +4,12 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
 import com.anonymous.reviews.reviewmodule.util.RepositoryInterface
 import kotlinx.coroutines.Dispatchers
+import javax.inject.Inject
 
 /**
  * View model of the architecture that handles the operations
  */
-class ReviewsViewModel constructor(val reviewsRepository: RepositoryInterface): ViewModel()
+class ReviewsViewModel @Inject constructor(val reviewsRepository: RepositoryInterface): ViewModel()
 {
     // To store the retrieved API data
     var reviewsData : MutableList<Review>

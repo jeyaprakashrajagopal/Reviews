@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_review_item.xml",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/layout/layout_review_item.xml"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_review_details.xml",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/layout/fragment_review_details.xml"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_berlin_travel_destination_reviews.xml",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/layout/fragment_berlin_travel_destination_reviews.xml"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_actionbar_customized.xml",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/layout/layout_actionbar_customized.xml"
+    }
+]

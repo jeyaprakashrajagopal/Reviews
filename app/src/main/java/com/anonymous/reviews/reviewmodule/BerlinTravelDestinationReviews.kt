@@ -7,10 +7,12 @@ import android.view.View
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.anonymous.reviews.adapter.TravelDestinationReviewsAdapter
 import com.anonymous.reviews.databinding.FragmentBerlinTravelDestinationReviewsBinding
 import com.anonymous.reviews.model.Review
@@ -22,19 +24,25 @@ import com.anonymous.reviews.reviewmodule.model.ReviewsData
 import com.anonymous.reviews.reviewmodule.util.MyUtils.ToggleVisibility
 import com.anonymous.reviews.reviewmodule.util.SortingType
 import com.anonymous.reviews.reviewmodule.util.constants
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
 /**
  * This fragment displays all the reviews collected from the remote source
  * based on pagination
  */
+@AndroidEntryPoint
 class BerlinTravelDestinationReviews :
         Fragment(R.layout.fragment_berlin_travel_destination_reviews), ReviewInterface {
+
+    @Inject
+    lateinit var factory: ReviewsViewModelFactory
     // View model instantiation
-    private val reviewsViewModel: ReviewsViewModel by viewModels {
-        ReviewsViewModelFactory(
-            ReviewsApiServiceImplementation()
-        )
+    private val reviewsViewModel: ReviewsViewModel by activityViewModels() {
+        factory
     }
+    // Is review already loading
+    private var isLoading: Boolean = false
 
     // Initializing Data Binding implementation component
     private lateinit var bindingBerlinDestinationReviews : FragmentBerlinTravelDestinationReviewsBinding
@@ -67,33 +75,23 @@ class BerlinTravelDestinationReviews :
     @RequiresApi(Build.VERSION_CODES.M)
     private fun initializeNestedSV() {
         // Setting scroll view listener to get the reviews from the remote repository when user scrolls
-        bindingBerlinDestinationReviews.reviewsNSV.setOnScrollChangeListener(
-            object: View.OnScrollChangeListener {
-                override fun onScrollChange(
-                    v: View?,
-                    scrollX: Int,
-                    scrollY: Int,
-                    oldScrollX: Int,
-                    oldScrollY: Int
-                ) {
-                    // Gets the last child of Nested Scroll view container
-                    val lastChild = bindingBerlinDestinationReviews.reviewsNSV
-                        .getChildAt(bindingBerlinDestinationReviews.reviewsNSV.childCount - 1)
-                    // If data exists on the Scroll view container
-                    if (lastChild != null) {
-                        // If user goes to bottom of the scroll view and if it is not the last page
-                        if ((scrollY >= (lastChild.measuredHeight -
-                                    bindingBerlinDestinationReviews.reviewsNSV.measuredHeight))
-                            && scrollY > oldScrollY && !reviewsViewModel.hasLastPageReached) {
-                            // Fetch reviews from remote source
-                            FetchReviewsData()
-                            ToggleVisibility(bindingBerlinDestinationReviews.progressGetReviewItems,
-                                true)
-                        }
+        bindingBerlinDestinationReviews.reviewsRecyclerView.addOnScrollListener(object: RecyclerView.OnScrollListener() {
+            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                super.onScrolled(recyclerView, dx, dy)
+
+                if(!isLoading) {
+                    if (!recyclerView.canScrollVertically(1) &&
+                            !reviewsViewModel.hasLastPageReached) {
+                        isLoading = true
+                        FetchReviewsData()
+                        ToggleVisibility(
+                            bindingBerlinDestinationReviews.progressGetReviewItems,
+                            true
+                        )
                     }
                 }
-
-            })
+            }
+        })
     }
 
     /**
@@ -112,6 +110,7 @@ class BerlinTravelDestinationReviews :
             if(it is HashMap<*, *>) {
                 Toast.makeText(requireContext(), it.get("error").toString(), Toast.LENGTH_SHORT).show()
                 ToggleVisibility(bindingBerlinDestinationReviews.progressGetReviewItems, false)
+                isLoading = false
             }
             else if(it is ReviewsData) {
                 ToggleVisibility(bindingBerlinDestinationReviews.progressGetReviewItems, false)
@@ -125,6 +124,7 @@ class BerlinTravelDestinationReviews :
                         reviewsViewModel.hasLastPageReached = true
                     }
                 }
+                isLoading = false
             }
         })
     }
@@ -142,7 +142,6 @@ class BerlinTravelDestinationReviews :
         else {
             travelDestinationReviewsAdapter.notifyDataSetChanged()
         }
-
     }
 
     /**

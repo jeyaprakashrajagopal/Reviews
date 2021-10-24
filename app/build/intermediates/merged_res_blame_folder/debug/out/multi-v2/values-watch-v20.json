@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "/Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/3027602b1fec35afdb961e93f9123cbe/transformed/appcompat-1.2.0/res/values-watch-v20/values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        }
+    ]
+}
