@@ -26,6 +26,7 @@ class MainActivityUIIntegrationTest {
 
     @Test
     fun testMainActivity_WhenActivityLaunched_isReviewsFragmentVisible() {
+        
         // Checking BerlinTravelDestinationReviewDetailsFragment's visibility
         onView(allOf(withId(R.id.reviewsFragmentContainer), withEffectiveVisibility(Visibility.VISIBLE)))
 
