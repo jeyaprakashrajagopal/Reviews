@@ -20,6 +20,7 @@ android {
     }
     testOptions {
         unitTests.includeAndroidResources = true
+        animationsDisabled = true
     }
     buildTypes {
         release {
@@ -39,7 +40,9 @@ android {
         dataBinding true
         viewBinding true
     }
-
+    packagingOptions {
+        resources.excludes.add("META-INF/*")
+    }
     configurations.all {
         resolutionStrategy {
             force 'androidx.test:monitor:1.4.0'
@@ -58,6 +61,7 @@ dependencies {
     implementation "androidx.navigation:navigation-ui-ktx:$navigationUIVersion"
     // Feature module Support
     implementation("androidx.navigation:navigation-dynamic-features-fragment:$navigationFragmentVersion")
+    implementation 'androidx.test.espresso:espresso-idling-resource:3.4.0'
 
     // Test Modules
     testImplementation "junit:junit:$junit4Version"
@@ -96,9 +100,24 @@ dependencies {
     implementation "com.github.bumptech.glide:glide:$glideVersion"
     kapt "com.github.bumptech.glide:compiler:$glideVersion"
 
+
     // Dependency injection related
     implementation("com.google.dagger:hilt-android:2.38.1")
     kapt("com.google.dagger:hilt-android-compiler:2.38.1")
+
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2'
+
+    // Coroutines test framework
+    androidTestImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutinesTestVersion"
+    androidTestImplementation 'androidx.arch.core:core-testing:2.1.0'
+    testImplementation 'androidx.arch.core:core-testing:2.1.0'
+    testImplementation "org.mockito.kotlin:mockito-kotlin:4.0.0"
+
+    testImplementation("org.mockito:mockito-core:4.0.0")
+    testImplementation 'org.mockito:mockito-inline:2.21.0'
+    testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.5.1'
+
 }
 
 repositories {

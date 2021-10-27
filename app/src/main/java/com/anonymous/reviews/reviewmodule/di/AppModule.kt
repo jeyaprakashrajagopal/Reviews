@@ -7,6 +7,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.FragmentComponent
 import dagger.hilt.components.SingletonComponent
+import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
@@ -17,9 +18,9 @@ object AppModule {
 
     @Provides
     fun provideRetrofitModule() = Retrofit.Builder()
+        .baseUrl(ReviewsApiService.BASE_URL)
         .addConverterFactory(GsonConverterFactory.create())
         .client(okhttp3.OkHttpClient())
-        .baseUrl(ReviewsApiService.BASE_URL)
         .build()
 
     @Provides

@@ -74,6 +74,13 @@ class BerlinTravelDestinationReviews :
 
     @RequiresApi(Build.VERSION_CODES.M)
     private fun initializeNestedSV() {
+        reviewsViewModel.loader.observe(viewLifecycleOwner, Observer {
+            when(it) {
+                true -> bindingBerlinDestinationReviews.progressGetReviewItems.visibility = View.VISIBLE
+                else -> bindingBerlinDestinationReviews.progressGetReviewItems.visibility = View.GONE
+            }
+        })
+
         // Setting scroll view listener to get the reviews from the remote repository when user scrolls
         bindingBerlinDestinationReviews.reviewsRecyclerView.addOnScrollListener(object: RecyclerView.OnScrollListener() {
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {

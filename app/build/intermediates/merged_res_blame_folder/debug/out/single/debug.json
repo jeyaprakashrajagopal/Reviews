@@ -1,19 +1,19 @@
 [
     {
-        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
-    },
-    {
         "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
         "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.webp.flat",
         "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
         "merged": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/merged_res/debug/layout_layout_actionbar_customized.xml.flat",

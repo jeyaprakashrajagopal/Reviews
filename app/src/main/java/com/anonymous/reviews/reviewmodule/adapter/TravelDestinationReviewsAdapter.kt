@@ -60,7 +60,6 @@ class TravelDestinationReviewsAdapter : ListAdapter<Review, TravelDestinationRev
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onBindViewHolder(holder: ReviewsViewHolder, position: Int) {
         holder.bindData(position, getItem(position))
-        setAnimation(holder.itemView)
     }
 
     /**

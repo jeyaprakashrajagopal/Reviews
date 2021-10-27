@@ -1,10 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.navigation:navigation-testing:2.3.5@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/57a341f1b1ef1b9c0e89f831026c0b6c/transformed/jetified-navigation-testing-2.3.5/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c492c0c5cf89c3de91fccd827a498811/transformed/jetified-navigation-testing-2.3.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c492c0c5cf89c3de91fccd827a498811/transformed/jetified-navigation-testing-2.3.5/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c492c0c5cf89c3de91fccd827a498811/transformed/jetified-navigation-testing-2.3.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/acfe4ce5fe93903b4b828eda4d846438/transformed/jetified-navigation-testing-2.3.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fa638e199847e606f8367b601a2fd982/transformed/jetified-navigation-testing-2.3.5/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fa638e199847e606f8367b601a2fd982/transformed/jetified-navigation-testing-2.3.5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/fa638e199847e606f8367b601a2fd982/transformed/jetified-navigation-testing-2.3.5/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

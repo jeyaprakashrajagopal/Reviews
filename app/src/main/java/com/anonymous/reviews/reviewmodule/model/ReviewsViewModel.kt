@@ -1,7 +1,9 @@
 package com.anonymous.reviews.model
 
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
+import com.anonymous.reviews.reviewmodule.util.EspressoIdlingResource
 import com.anonymous.reviews.reviewmodule.util.RepositoryInterface
 import kotlinx.coroutines.Dispatchers
 import javax.inject.Inject
@@ -20,6 +22,7 @@ class ReviewsViewModel @Inject constructor(val reviewsRepository: RepositoryInte
         reviewsData = mutableListOf()
     }
 
+    val loader = MutableLiveData<Boolean>()
 
     /**
      * Make REST API request and wait for the response
@@ -28,12 +31,15 @@ class ReviewsViewModel @Inject constructor(val reviewsRepository: RepositoryInte
     fun getReviewDocs(queryMap: Map<String, Any>) = liveData(Dispatchers.IO)
     {
         try {
+            loader.postValue(true)
             val reviews = reviewsRepository.getReviews(queryMap)
             println("reviews $reviews")
             emit(reviews)
+            loader.postValue(false)
         }
         catch (e: Exception) {
             emit(hashMapOf("error" to e.message.toString()))
+            EspressoIdlingResource.decrement()
         }
     }
 }

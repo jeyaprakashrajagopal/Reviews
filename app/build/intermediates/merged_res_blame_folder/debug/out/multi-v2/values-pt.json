@@ -4,7 +4,7 @@
             "outputFile": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt/values-pt.xml",
             "map": [
                 {
-                    "source": "/Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/b3a302f1b3683a28a6b8bdccde211b94/transformed/core-1.6.0/res/values-pt/values-pt.xml",
+                    "source": "/Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/a76da19ca9939619900b1f9150f38ac0/transformed/core-1.6.0/res/values-pt/values-pt.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "/Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/3027602b1fec35afdb961e93f9123cbe/transformed/appcompat-1.2.0/res/values-pt/values-pt.xml",
+                    "source": "/Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d329c277001a29ca5eb89a3d092280b9/transformed/jetified-navigation-dynamic-features-fragment-2.3.5/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,157,255,353,417,495",
+                        "endColumns": "101,97,97,63,77,80",
+                        "endOffsets": "152,250,348,412,490,571"
+                    },
+                    "to": {
+                        "startLines": "29,30,31,34,35,36",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "2843,2945,3043,3373,3437,3515",
+                        "endColumns": "101,97,97,63,77,80",
+                        "endOffsets": "2940,3038,3136,3432,3510,3591"
+                    }
+                },
+                {
+                    "source": "/Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/968af77d1856947c7bf16a63081b7685/transformed/appcompat-1.2.0/res/values-pt/values-pt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "/Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/3c29ca4828ca24040f6037a2fba4c0ac/transformed/navigation-ui-2.3.5/res/values-pt/values-pt.xml",
+                    "source": "/Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/3cd68fe212b42039ee08a79131e7d10b/transformed/navigation-ui-2.3.5/res/values-pt/values-pt.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -52,23 +69,6 @@
                         "startOffsets": "3141,3253",
                         "endColumns": "111,119",
                         "endOffsets": "3248,3368"
-                    }
-                },
-                {
-                    "source": "/Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/ede2c02899c92ec2cafe90472981442a/transformed/jetified-navigation-dynamic-features-fragment-2.3.5/res/values-pt/values-pt.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,157,255,353,417,495",
-                        "endColumns": "101,97,97,63,77,80",
-                        "endOffsets": "152,250,348,412,490,571"
-                    },
-                    "to": {
-                        "startLines": "29,30,31,34,35,36",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "2843,2945,3043,3373,3437,3515",
-                        "endColumns": "101,97,97,63,77,80",
-                        "endOffsets": "2940,3038,3136,3432,3510,3591"
                     }
                 }
             ]
