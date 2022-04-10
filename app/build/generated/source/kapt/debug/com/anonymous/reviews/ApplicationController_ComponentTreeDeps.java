@@ -18,8 +18,8 @@ import dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_andro
 import dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_internal_builders_ViewWithFragmentComponentBuilder;
 import dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_components_SingletonComponent;
 import hilt_aggregated_deps._com_anonymous_reviews_ApplicationController_GeneratedInjector;
-import hilt_aggregated_deps._com_anonymous_reviews_BerlinTravelDestinationReviews_GeneratedInjector;
 import hilt_aggregated_deps._com_anonymous_reviews_MainActivity_GeneratedInjector;
+import hilt_aggregated_deps._com_anonymous_reviews_reviewmodule_BerlinTravelDestinationReviews_GeneratedInjector;
 import hilt_aggregated_deps._com_anonymous_reviews_reviewmodule_di_AppModule;
 import hilt_aggregated_deps._dagger_hilt_android_internal_lifecycle_DefaultViewModelFactories_ActivityEntryPoint;
 import hilt_aggregated_deps._dagger_hilt_android_internal_lifecycle_DefaultViewModelFactories_FragmentEntryPoint;
@@ -74,10 +74,10 @@ import hilt_aggregated_deps._dagger_hilt_android_internal_modules_HiltWrapper_Ac
         _dagger_hilt_android_internal_managers_ViewComponentManager_ViewWithFragmentComponentBuilderEntryPoint.class,
         _dagger_hilt_android_internal_modules_ApplicationContextModule.class,
         _dagger_hilt_android_internal_modules_HiltWrapper_ActivityModule.class,
-        _com_anonymous_reviews_reviewmodule_di_AppModule.class,
         _com_anonymous_reviews_ApplicationController_GeneratedInjector.class,
         _com_anonymous_reviews_MainActivity_GeneratedInjector.class,
-        _com_anonymous_reviews_BerlinTravelDestinationReviews_GeneratedInjector.class
+        _com_anonymous_reviews_reviewmodule_BerlinTravelDestinationReviews_GeneratedInjector.class,
+        _com_anonymous_reviews_reviewmodule_di_AppModule.class
     }
 )
 class ApplicationController_ComponentTreeDeps {

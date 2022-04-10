@@ -13,8 +13,8 @@ import java.util.*
  */
 @Parcelize
 data class Review (
-    val id : Int,
-    val author: Author,
+    val id : Int = 0,
+    val author: Author = Author(),
     val title: String = "",
     val message: String = "",
     val enjoyment: String = "",

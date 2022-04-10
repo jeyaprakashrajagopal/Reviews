@@ -5,7 +5,9 @@ import com.anonymous.reviews.model.Review
 /**
  * Actual response model from DB
  */
-data class ReviewsData
-(
-    val reviews: List<Review>
-)
+sealed class ReviewsData
+{
+    data class Success(val reviews: List<Review>): ReviewsData()
+    data class Error(val error: String): ReviewsData()
+    object Loading : ReviewsData()
+}

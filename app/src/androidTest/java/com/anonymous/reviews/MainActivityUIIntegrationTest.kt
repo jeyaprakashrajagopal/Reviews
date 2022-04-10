@@ -1,13 +1,10 @@
 package com.anonymous.reviews
 
 import androidx.test.espresso.Espresso.onView
-import androidx.test.espresso.Espresso.pressBack
-import androidx.test.espresso.action.ViewActions.click
-import androidx.test.espresso.contrib.RecyclerViewActions.actionOnItemAtPosition
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.anonymous.reviews.adapter.TravelDestinationReviewsAdapter
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import org.hamcrest.Matchers.allOf
 import org.junit.Rule
 import org.junit.Test
@@ -18,6 +15,7 @@ import org.junit.runner.RunWith
  *
  * This class performs series of tests on the main activity
  */
+@ExperimentalCoroutinesApi
 @RunWith(AndroidJUnit4::class)
 class MainActivityUIIntegrationTest {
     // Launching the main activity before the test begins and destroys it after the test
@@ -45,25 +43,4 @@ class MainActivityUIIntegrationTest {
             withId(R.id.reviewedBy), withId(R.id.reviewedFrom),
             withEffectiveVisibility(Visibility.VISIBLE)))
     }
-
-    @Test
-    fun testMainActivity_WhenAnItemIsClickedAndPressBack_isFlowSucceeds() {
-
-        // Check if review details container is visible before selecting an item
-        onView(allOf(withId(R.id.reviewsRecyclerView), withEffectiveVisibility(Visibility.VISIBLE)))
-
-        // Perform click on the particular item from the list
-        onView(allOf(withId(R.id.reviewsRecyclerView)))
-            .perform(actionOnItemAtPosition<TravelDestinationReviewsAdapter.ReviewsViewHolder>(0, click()))
-        // Upon click, review details container should be visible
-        onView(allOf(withId(R.id.reviewDetailsFragmentContainer), withEffectiveVisibility(Visibility.VISIBLE)))
-
-        // Go back to main fragment
-        pressBack()
-
-        // Test the visibility of the reviews list fragment
-        onView(allOf(withId(R.id.reviewsRecyclerView), withEffectiveVisibility(Visibility.VISIBLE)))
-    }
-
-
 }

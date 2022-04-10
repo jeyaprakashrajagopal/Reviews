@@ -7,6 +7,8 @@ import android.view.View;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.SavedStateHandle;
 import androidx.lifecycle.ViewModel;
+import com.anonymous.reviews.reviewmodule.BerlinTravelDestinationReviews;
+import com.anonymous.reviews.reviewmodule.BerlinTravelDestinationReviews_MembersInjector;
 import com.anonymous.reviews.reviewmodule.apiservice.ReviewsApiService;
 import com.anonymous.reviews.reviewmodule.apiservice.ReviewsApiServiceImplementation;
 import com.anonymous.reviews.reviewmodule.di.AppModule;
@@ -337,9 +339,8 @@ public final class DaggerApplicationController_HiltComponents_SingletonC extends
     }
 
     @Override
-    public void injectBerlinTravelDestinationReviews(
-        BerlinTravelDestinationReviews berlinTravelDestinationReviews) {
-      injectBerlinTravelDestinationReviews2(berlinTravelDestinationReviews);
+    public void injectBerlinTravelDestinationReviews(BerlinTravelDestinationReviews arg0) {
+      injectBerlinTravelDestinationReviews2(arg0);
     }
 
     @Override
@@ -394,7 +395,7 @@ public final class DaggerApplicationController_HiltComponents_SingletonC extends
     }
 
     @Override
-    public void injectMainActivity(MainActivity mainActivity) {
+    public void injectMainActivity(MainActivity arg0) {
     }
 
     @Override

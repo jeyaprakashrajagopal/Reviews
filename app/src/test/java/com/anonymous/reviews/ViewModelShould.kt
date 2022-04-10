@@ -1,56 +1,64 @@
 package com.anonymous.reviews
 
-import com.anonymous.reviews.model.ReviewsViewModel
-import com.anonymous.reviews.reviewmodule.apiservice.ReviewsApiService
-import com.anonymous.reviews.reviewmodule.apiservice.ReviewsApiServiceImplementation
+import com.anonymous.reviews.model.Review
 import com.anonymous.reviews.reviewmodule.model.ReviewsData
+import com.anonymous.reviews.reviewmodule.model.ReviewsViewModel
 import com.anonymous.reviews.reviewmodule.repository.ReviewsRepository
 import com.anonymous.reviews.reviewmodule.util.SortingType
 import com.anonymous.reviews.reviewmodule.util.constants
-import com.anonymous.reviews.utils.captureValues
 import com.anonymous.reviews.utils.getValueForTest
 import junit.framework.Assert.assertEquals
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.test.TestCoroutineDispatcher
-import kotlinx.coroutines.test.runBlockingTest
+import kotlinx.coroutines.test.resetMain
 import kotlinx.coroutines.test.setMain
+import org.junit.After
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mockito.`when`
 import org.mockito.Mockito.mock
-import org.mockito.kotlin.mock
-import org.mockito.kotlin.whenever
-import retrofit2.http.QueryMap
 
 @ExperimentalCoroutinesApi
 class ViewModelShould : BaseUnitTest(){
-    val repository = mock(ReviewsRepository::class.java)
-    val viewmodel = ReviewsViewModel(repository)
-    val mockdata = mock<ReviewsData>()
-    val mockInput = mapOf("offset" to 10, "limit" to constants.LIMIT,
+    private lateinit var repository: ReviewsRepository
+    private lateinit var sut: ReviewsViewModel
+    private val mockInput = mapOf("offset" to 10, "limit" to constants.LIMIT,
         "sort" to SortingType.DESCDATE.method)
 
-    val test= TestCoroutineDispatcher()
+    private val test = TestCoroutineDispatcher()
 
     @Before
     fun setUp() {
         Dispatchers.setMain(test)
+        repository = mock(ReviewsRepository::class.java)
+        sut = ReviewsViewModel(repository)
+    }
+
+    @After
+    fun tearDown() {
+        Dispatchers.resetMain()
     }
 
     @Test
-    fun testDisplayLoaderWhileFetchingReviews() = runBlockingTest {
+    fun testDisplayLoaderWhileFetchingReviews() = runBlocking {
+        val mockError = ReviewsData.Error("Nw error")
 
+        `when`(repository.getReviews(mockInput)).thenReturn(mockError)
+        sut.getReviewDocs(mockInput)
+
+        assertEquals(mockError.error, sut.reviewsError.getValueForTest())
     }
 
     @Test
-    fun testGetReviewDocs() = runBlockingTest {
-        `when`(repository.getReviews(mockInput)).thenReturn(mockdata)
+    fun testGetReviewDocs() = runBlocking {
+        val mockData = ReviewsData.Success(listOf(Review()))
 
-        viewmodel.getReviewDocs(mockInput).captureValues {
+        `when`(repository.getReviews(mockInput)).thenReturn(mockData)
 
-        }
+        sut.getReviewDocs(mockInput)
 
-        assertEquals(mockdata, viewmodel.getReviewDocs(mockInput).getValueForTest())
+        assertEquals(mockData.reviews, sut.reviewsData.getValueForTest())
     }
 }

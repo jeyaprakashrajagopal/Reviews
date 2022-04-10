@@ -1,5 +1,6 @@
 package com.anonymous.reviews;
 
+import com.anonymous.reviews.reviewmodule.BerlinTravelDestinationReviews_GeneratedInjector;
 import com.anonymous.reviews.reviewmodule.di.AppModule;
 import dagger.Binds;
 import dagger.Component;

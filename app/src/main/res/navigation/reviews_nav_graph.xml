@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/reviewsFragment"
-        android:name="com.anonymous.reviews.BerlinTravelDestinationReviews"
+        android:name="com.anonymous.reviews.reviewmodule.BerlinTravelDestinationReviews"
         >
         <action
             android:id="@+id/actionReviewsFragmentToReviewDetailsFragment"

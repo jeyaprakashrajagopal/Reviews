@@ -19,13 +19,13 @@ class ReviewsRepositoryTest {
 
     @Test
     fun testReviewsRepository_WhenDataGetsRetrieved_isMessageMatching() = runBlocking {
-        val reviews = repository.getReviews(constants.QUERYMAP).reviews
-        assert(reviews.get(0).message.equals("I love Berlin"))
+        val reviews = repository.getReviews(constants.QUERYMAP)
+        assert(reviews.reviews[0].message == "I love Berlin")
     }
 
     @Test
     fun testReviewsRepository_WhenDataGetsRetrieved_retrievedDataSizeMatches() = runBlocking {
-        val reviews = repository.getReviews(constants.QUERYMAP).reviews
-        assert(reviews.size == 2)
+        val reviews = repository.getReviews(constants.QUERYMAP)
+        assert(reviews.reviews.size == 2)
     }
 }

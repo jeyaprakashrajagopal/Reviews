@@ -3,18 +3,12 @@ package com.anonymous.reviews.acceptancetests
 import android.view.View
 import android.view.ViewGroup
 import androidx.test.espresso.Espresso.onView
-import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
-import androidx.test.espresso.contrib.RecyclerViewActions.actionOnItemAtPosition
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import com.anonymous.reviews.MainActivity
-
 import com.anonymous.reviews.R
-import com.anonymous.reviews.adapter.TravelDestinationReviewsAdapter
-import kotlinx.coroutines.ExperimentalCoroutinesApi
 import org.hamcrest.Description
 import org.hamcrest.Matcher
 import org.hamcrest.TypeSafeMatcher

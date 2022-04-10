@@ -2,7 +2,7 @@ package com.anonymous.reviews.reviewmodule.factory
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentFactory
-import com.anonymous.reviews.BerlinTravelDestinationReviews
+import com.anonymous.reviews.reviewmodule.BerlinTravelDestinationReviews
 
 /**
  * It is needed to send parameters to the fragments via factory class

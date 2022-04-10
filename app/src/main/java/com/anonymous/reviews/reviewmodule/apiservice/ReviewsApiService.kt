@@ -1,6 +1,6 @@
 package com.anonymous.reviews.reviewmodule.apiservice
 
-import com.anonymous.reviews.reviewmodule.model.ReviewsData
+import com.anonymous.reviews.reviewmodule.model.ReviewsDataClass
 import retrofit2.http.GET
 import retrofit2.http.QueryMap
 
@@ -15,5 +15,5 @@ interface ReviewsApiService {
     }
 
     @GET("activities/23776/reviews")
-    suspend fun getReviews(@QueryMap queryMap: Map<String,Any>): ReviewsData
+    suspend fun getReviews(@QueryMap queryMap: Map<String,Any>): ReviewsDataClass
 }

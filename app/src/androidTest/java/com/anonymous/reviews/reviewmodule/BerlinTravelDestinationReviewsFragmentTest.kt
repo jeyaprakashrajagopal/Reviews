@@ -6,10 +6,9 @@ import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.anonymous.reviews.BerlinTravelDestinationReviews
 import com.anonymous.reviews.R
-import com.anonymous.reviews.model.ReviewsViewModel
 import com.anonymous.reviews.reviewmodule.factory.ReviewsMainFragmentFactory
+import com.anonymous.reviews.reviewmodule.model.ReviewsViewModel
 import com.anonymous.reviews.reviewmodule.repository.FakeRepositorySource
 import org.hamcrest.Matchers
 import org.junit.Before
@@ -19,16 +18,16 @@ import org.junit.runner.RunWith
 @RunWith(AndroidJUnit4::class)
 class BerlinTravelDestinationReviewsFragmentTest
 {
-    lateinit var repository: FakeRepositorySource
-    lateinit var viewModel : ReviewsViewModel
+    private lateinit var repository: FakeRepositorySource
+    private lateinit var viewModel : ReviewsViewModel
 
-    lateinit var factory: ReviewsMainFragmentFactory
+    private lateinit var factory: ReviewsMainFragmentFactory
 
     @Before
     fun setUp() {
+        factory = ReviewsMainFragmentFactory()
         repository = FakeRepositorySource()
         viewModel = ReviewsViewModel(repository.getReference())
-        factory = ReviewsMainFragmentFactory()
     }
 
     @Test

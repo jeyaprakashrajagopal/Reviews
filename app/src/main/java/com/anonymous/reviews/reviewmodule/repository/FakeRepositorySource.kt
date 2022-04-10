@@ -9,9 +9,7 @@ import com.anonymous.reviews.reviewmodule.util.RepositoryInterface
  */
 class FakeRepositorySource : RepositoryInterface {
 
-    override suspend fun getReviews(queryMap: Map<String, Any>) : ReviewsData {
-        return ReviewsData(listOf(REVIEW_1, REVIEW_2))
-    }
+    override suspend fun getReviews(queryMap: Map<String, Any>) = ReviewsData.Success(listOf(REVIEW_1, REVIEW_2))
 
     fun getReference() : RepositoryInterface = this
 

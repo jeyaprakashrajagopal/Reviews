@@ -1,0 +1,2 @@
+com/anonymous/reviews/test/BuildConfig.java
+ com.anonymous.reviews.test.BuildConfig

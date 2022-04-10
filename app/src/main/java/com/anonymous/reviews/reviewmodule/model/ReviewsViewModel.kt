@@ -1,45 +1,61 @@
-package com.anonymous.reviews.model
+package com.anonymous.reviews.reviewmodule.model
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.liveData
-import com.anonymous.reviews.reviewmodule.util.EspressoIdlingResource
+import com.anonymous.reviews.model.Review
+import com.anonymous.reviews.reviewmodule.GetReviewsUseCase
 import com.anonymous.reviews.reviewmodule.util.RepositoryInterface
-import kotlinx.coroutines.Dispatchers
+import com.anonymous.reviews.reviewmodule.util.constants
 import javax.inject.Inject
 
 /**
  * View model of the architecture that handles the operations
  */
-class ReviewsViewModel @Inject constructor(val reviewsRepository: RepositoryInterface): ViewModel()
+class ReviewsViewModel @Inject constructor(reviewsRepository: RepositoryInterface): ViewModel()
 {
     // To store the retrieved API data
-    var reviewsData : MutableList<Review>
+    private val _reviewsData = MutableLiveData<List<Review>>(listOf())
+    val reviewsData : LiveData<List<Review>> = _reviewsData
+
+    // To report the error retrieved API data
+    private val _reviewsError = MutableLiveData("")
+    val reviewsError : LiveData<String> = _reviewsError
+
     // If reviews last page reaches
     var hasLastPageReached = false
 
-    init {
-        reviewsData = mutableListOf()
-    }
-
-    val loader = MutableLiveData<Boolean>()
+    // Singleton instance gets created once the project is adapted to clean architecture
+    private val reviewsUseCase = GetReviewsUseCase(reviewsRepository)
 
     /**
      * Make REST API request and wait for the response
      * Updates state to loading then Success/Error once available
      */
-    fun getReviewDocs(queryMap: Map<String, Any>) = liveData(Dispatchers.IO)
+    suspend fun getReviewDocs(queryMap: Map<String, Any>)
     {
         try {
-            loader.postValue(true)
-            val reviews = reviewsRepository.getReviews(queryMap)
-            println("reviews $reviews")
-            emit(reviews)
-            loader.postValue(false)
+            val data = _reviewsData.value?.toMutableList()
+            when(val reviews = reviewsUseCase.getReviewDocs(queryMap)) {
+                is ReviewsData.Success -> {
+                    // If last page is reached
+                    if(reviews.reviews.size < constants.LIMIT) hasLastPageReached = true
+
+                    reviews.reviews.forEach {
+                        if (data != null) {
+                            if (!data.contains(it)) data.add(it)
+                        }
+                    }
+                    _reviewsData.postValue(data ?: mutableListOf())
+                }
+                is ReviewsData.Error -> {
+                    _reviewsError.postValue(reviews.error)
+                }
+                is ReviewsData.Loading -> {}
+            }
         }
         catch (e: Exception) {
-            emit(hashMapOf("error" to e.message.toString()))
-            EspressoIdlingResource.decrement()
+            _reviewsError.postValue(e.message.toString())
         }
     }
 }

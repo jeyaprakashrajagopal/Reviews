@@ -9,7 +9,7 @@ import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.anonymous.reviews.BerlinTravelDestinationReviewDetails
 import com.anonymous.reviews.R
-import com.anonymous.reviews.model.ReviewsViewModel
+import com.anonymous.reviews.reviewmodule.model.ReviewsViewModel
 import com.anonymous.reviews.reviewmodule.repository.FakeRepositorySource
 import org.hamcrest.Matchers.not
 import org.junit.Before

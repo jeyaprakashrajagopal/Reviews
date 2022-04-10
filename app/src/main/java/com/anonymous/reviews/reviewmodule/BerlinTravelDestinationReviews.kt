@@ -1,26 +1,22 @@
-package com.anonymous.reviews
+package com.anonymous.reviews.reviewmodule
 
 import android.annotation.SuppressLint
 import android.os.Build
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.anonymous.reviews.R
 import com.anonymous.reviews.adapter.TravelDestinationReviewsAdapter
 import com.anonymous.reviews.databinding.FragmentBerlinTravelDestinationReviewsBinding
-import com.anonymous.reviews.model.Review
-import com.anonymous.reviews.model.ReviewsViewModel
 import com.anonymous.reviews.reviewmodule.apiservice.ReviewInterface
-import com.anonymous.reviews.reviewmodule.apiservice.ReviewsApiServiceImplementation
 import com.anonymous.reviews.reviewmodule.factory.ReviewsViewModelFactory
-import com.anonymous.reviews.reviewmodule.model.ReviewsData
+import com.anonymous.reviews.reviewmodule.model.ReviewsViewModel
 import com.anonymous.reviews.reviewmodule.util.MyUtils.ToggleVisibility
 import com.anonymous.reviews.reviewmodule.util.SortingType
 import com.anonymous.reviews.reviewmodule.util.constants
@@ -54,7 +50,6 @@ class BerlinTravelDestinationReviews :
      * When view gets created bind the view and initialize the view and model components
      * We don't have to inflate the view as it's already done
      *
-     * @param reviewsViewModel.state
      * @return -
      */
     @RequiresApi(Build.VERSION_CODES.M)
@@ -64,22 +59,16 @@ class BerlinTravelDestinationReviews :
         // already been sent to Fragment class
         bindingBerlinDestinationReviews = FragmentBerlinTravelDestinationReviewsBinding.bind(view)
 
-        // Intialize Views
-        Initialize()
+        // Initialize Views
+        initialize()
         // Create recyclerView
-        CreateRecyclerView()
+        createRecyclerView()
         // Initialize Nested scrollview
         initializeNestedSV()
     }
 
     @RequiresApi(Build.VERSION_CODES.M)
     private fun initializeNestedSV() {
-        reviewsViewModel.loader.observe(viewLifecycleOwner, Observer {
-            when(it) {
-                true -> bindingBerlinDestinationReviews.progressGetReviewItems.visibility = View.VISIBLE
-                else -> bindingBerlinDestinationReviews.progressGetReviewItems.visibility = View.GONE
-            }
-        })
 
         // Setting scroll view listener to get the reviews from the remote repository when user scrolls
         bindingBerlinDestinationReviews.reviewsRecyclerView.addOnScrollListener(object: RecyclerView.OnScrollListener() {
@@ -90,7 +79,7 @@ class BerlinTravelDestinationReviews :
                     if (!recyclerView.canScrollVertically(1) &&
                             !reviewsViewModel.hasLastPageReached) {
                         isLoading = true
-                        FetchReviewsData()
+                        fetchReviewsData()
                         ToggleVisibility(
                             bindingBerlinDestinationReviews.progressGetReviewItems,
                             true
@@ -107,58 +96,44 @@ class BerlinTravelDestinationReviews :
      * @param -
      * @return -
      */
-    private fun FetchReviewsData() {
+    private fun fetchReviewsData() {
         // input is designed to accommodate the pagination which will offset previously loaded data
-        val QUERYMAP = mapOf("offset" to reviewsViewModel.reviewsData.size, "limit" to constants.LIMIT,
+        val queryMap = mapOf("offset" to (reviewsViewModel.reviewsData.value?.size ?: 0), "limit" to constants.LIMIT,
             "sort" to SortingType.DESCDATE.method)
 
-        reviewsViewModel.getReviewDocs(QUERYMAP).observe(viewLifecycleOwner, Observer {
+        reviewsViewModel.reviewsError.observe(viewLifecycleOwner) {
+            isLoading = false
             // If get review docs result in error or with the data
-            if(it is HashMap<*, *>) {
-                Toast.makeText(requireContext(), it.get("error").toString(), Toast.LENGTH_SHORT).show()
-                ToggleVisibility(bindingBerlinDestinationReviews.progressGetReviewItems, false)
-                isLoading = false
-            }
-            else if(it is ReviewsData) {
-                ToggleVisibility(bindingBerlinDestinationReviews.progressGetReviewItems, false)
+            ToggleVisibility(bindingBerlinDestinationReviews.progressGetReviewItems, false)
+        }
+        reviewsViewModel.reviewsData.observe(viewLifecycleOwner) {
+            // If get review docs result in error or with the data
+            ToggleVisibility(bindingBerlinDestinationReviews.progressGetReviewItems, false)
 
-                if(it.reviews.size != 0) {
-                    // Render reviews on the recycler view adapter
-                    renderList(it.reviews)
-                } else {
-                    // if there is no more reviews
-                    if (it.reviews.size < constants.LIMIT) {
-                        reviewsViewModel.hasLastPageReached = true
-                    }
-                }
-                isLoading = false
+            if(it.isNotEmpty()) {
+                // Render reviews on the recycler view adapter
+                renderList()
             }
-        })
+            isLoading = false
+        }
+        lifecycleScope.launchWhenStarted {
+            reviewsViewModel.getReviewDocs(queryMap)
+        }
     }
 
     @SuppressLint("NotifyDataSetChanged")
-    private fun renderList(reviewsData: List<Review>) {
-        // To avoid duplicates when configuration gets changed
-        reviewsData.filter { !reviewsViewModel.reviewsData.contains(it) }.forEach {
-            reviewsViewModel.reviewsData.add(it)
-        }
-        // If recyclerview list is empty submit the reviews otherwise just notify
-        if(travelDestinationReviewsAdapter.currentList.isEmpty()){
-            travelDestinationReviewsAdapter.submitList(reviewsViewModel.reviewsData)
-        }
-        else {
-            travelDestinationReviewsAdapter.notifyDataSetChanged()
-        }
+    private fun renderList() {
+        travelDestinationReviewsAdapter.submitList(reviewsViewModel.reviewsData.value)
     }
 
     /**
      * Creates recycler view adapter and sets the recycler view
-     * Setting an interface context for listitem clicks
+     * Setting an interface context for list item clicks
      *
      * @param -
      * @return -
      */
-    private fun CreateRecyclerView() {
+    private fun createRecyclerView() {
         bindingBerlinDestinationReviews.reviewsRecyclerView.apply {
             adapter = travelDestinationReviewsAdapter
             layoutManager = LinearLayoutManager(requireContext())
@@ -169,20 +144,20 @@ class BerlinTravelDestinationReviews :
     }
 
     /**
-     * Initializes the viewmodel and sets up intent listener for different intents defined
+     * Initializes the view model and sets up intent listener for different intents defined
      * (only one intent is used in this app)
      * @param -
      * @return -
      */
-    private fun Initialize() {
+    private fun initialize() {
         travelDestinationReviewsAdapter = TravelDestinationReviewsAdapter()
 
-        if (reviewsViewModel.reviewsData.isEmpty()) {
+        if (reviewsViewModel.reviewsData.value?.isEmpty() == true) {
             // Fetched live data observer
-            FetchReviewsData()
+            fetchReviewsData()
         }
         else {
-            renderList(reviewsViewModel.reviewsData)
+            reviewsViewModel.reviewsData.value.let { renderList() }
         }
     }
 
@@ -193,11 +168,14 @@ class BerlinTravelDestinationReviews :
      * @return -
      */
     override fun onReviewSelection(position: Int) {
-        val action = BerlinTravelDestinationReviewsDirections.
-            actionReviewsFragmentToReviewDetailsFragment(reviewsViewModel.reviewsData.get(position)
-        )
+        val action = reviewsViewModel.reviewsData.value?.get(position)?.let {
+            BerlinTravelDestinationReviewsDirections.actionReviewsFragmentToReviewDetailsFragment(
+                it
+            )
+        }
 
-        findNavController().navigate(action)
+        if (action != null) {
+            findNavController().navigate(action)
+        }
     }
-
 }
