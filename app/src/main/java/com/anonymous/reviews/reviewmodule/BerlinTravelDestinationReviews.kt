@@ -104,11 +104,11 @@ class BerlinTravelDestinationReviews :
         reviewsViewModel.reviewsError.observe(viewLifecycleOwner) {
             isLoading = false
             // If get review docs result in error or with the data
-            ToggleVisibility(bindingBerlinDestinationReviews.progressGetReviewItems, false)
+            hideProgressBar()
         }
         reviewsViewModel.reviewsData.observe(viewLifecycleOwner) {
             // If get review docs result in error or with the data
-            ToggleVisibility(bindingBerlinDestinationReviews.progressGetReviewItems, false)
+            hideProgressBar()
 
             if(it.isNotEmpty()) {
                 // Render reviews on the recycler view adapter
@@ -157,8 +157,15 @@ class BerlinTravelDestinationReviews :
             fetchReviewsData()
         }
         else {
+            // If get review docs result in error or with the data
+            hideProgressBar()
+
             reviewsViewModel.reviewsData.value.let { renderList() }
         }
+    }
+
+    private fun hideProgressBar() {
+        ToggleVisibility(bindingBerlinDestinationReviews.progressGetReviewItems, false)
     }
 
     /**

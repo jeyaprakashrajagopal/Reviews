@@ -20,8 +20,8 @@ com/anonymous/reviews/BuildConfig.java
  com.anonymous.reviews.BuildConfig
 androidx/databinding/DataBindingComponent.java
  androidx.databinding.DataBindingComponent
-com/anonymous/reviews/ApplicationController_ComponentTreeDeps.java
- com.anonymous.reviews.ApplicationController_ComponentTreeDeps
+com/anonymous/reviews/BR.java
+ com.anonymous.reviews.BR
 com/anonymous/reviews/DataBindingTriggerClass.java
  com.anonymous.reviews.DataBindingTriggerClass
 com/anonymous/reviews/DataBinderMapperImpl.java
@@ -35,9 +35,8 @@ hilt_aggregated_deps/_com_anonymous_reviews_reviewmodule_di_AppModule.java
 com/anonymous/reviews/Hilt_MainActivity.java
  com.anonymous.reviews.Hilt_MainActivity
  com.anonymous.reviews.Hilt_MainActivity$1
-com/anonymous/reviews/Hilt_ApplicationController.java
- com.anonymous.reviews.Hilt_ApplicationController
- com.anonymous.reviews.Hilt_ApplicationController$1
+com/anonymous/reviews/MainActivity_GeneratedInjector.java
+ com.anonymous.reviews.MainActivity_GeneratedInjector
 hilt_aggregated_deps/_com_anonymous_reviews_ApplicationController_GeneratedInjector.java
  hilt_aggregated_deps._com_anonymous_reviews_ApplicationController_GeneratedInjector
 com/anonymous/reviews/databinding/LayoutActionbarCustomizedBinding.java
@@ -50,17 +49,6 @@ com/anonymous/reviews/databinding/ActivityMainBinding.java
  com.anonymous.reviews.databinding.ActivityMainBinding
 dagger/hilt/internal/processedrootsentinel/codegen/_com_anonymous_reviews_ApplicationController.java
  dagger.hilt.internal.processedrootsentinel.codegen._com_anonymous_reviews_ApplicationController
-com/anonymous/reviews/MainActivity_GeneratedInjector.java
- com.anonymous.reviews.MainActivity_GeneratedInjector
-com/anonymous/reviews/BR.java
- com.anonymous.reviews.BR
-com/anonymous/reviews/reviewmodule/di/AppModule_ProvideAPIServiceFactory.java
- com.anonymous.reviews.reviewmodule.di.AppModule_ProvideAPIServiceFactory
-com/anonymous/reviews/reviewmodule/di/AppModule_ProvideRetrofitModuleFactory.java
- com.anonymous.reviews.reviewmodule.di.AppModule_ProvideRetrofitModuleFactory
- com.anonymous.reviews.reviewmodule.di.AppModule_ProvideRetrofitModuleFactory$InstanceHolder
-com/anonymous/reviews/reviewmodule/apiservice/ReviewsApiServiceImplementation_Factory.java
- com.anonymous.reviews.reviewmodule.apiservice.ReviewsApiServiceImplementation_Factory
 com/anonymous/reviews/ApplicationController_HiltComponents.java
  com.anonymous.reviews.ApplicationController_HiltComponents
  com.anonymous.reviews.ApplicationController_HiltComponents$ActivityC
@@ -87,6 +75,8 @@ com/anonymous/reviews/ApplicationController_HiltComponents.java
  com.anonymous.reviews.ApplicationController_HiltComponents$ViewWithFragmentCBuilderModule
 com/anonymous/reviews/reviewmodule/Hilt_BerlinTravelDestinationReviews.java
  com.anonymous.reviews.reviewmodule.Hilt_BerlinTravelDestinationReviews
+com/anonymous/reviews/reviewmodule/apiservice/ReviewsApiServiceImplementation_Factory.java
+ com.anonymous.reviews.reviewmodule.apiservice.ReviewsApiServiceImplementation_Factory
 com/anonymous/reviews/DaggerApplicationController_HiltComponents_SingletonC.java
  com.anonymous.reviews.DaggerApplicationController_HiltComponents_SingletonC
  com.anonymous.reviews.DaggerApplicationController_HiltComponents_SingletonC$1
@@ -109,9 +99,19 @@ com/anonymous/reviews/DaggerApplicationController_HiltComponents_SingletonC.java
  com.anonymous.reviews.DaggerApplicationController_HiltComponents_SingletonC$ViewWithFragmentCImpl
 com/anonymous/reviews/reviewmodule/BerlinTravelDestinationReviews_MembersInjector.java
  com.anonymous.reviews.reviewmodule.BerlinTravelDestinationReviews_MembersInjector
+com/anonymous/reviews/reviewmodule/di/AppModule_ProvideAPIServiceFactory.java
+ com.anonymous.reviews.reviewmodule.di.AppModule_ProvideAPIServiceFactory
+com/anonymous/reviews/reviewmodule/di/AppModule_ProvideRetrofitModuleFactory.java
+ com.anonymous.reviews.reviewmodule.di.AppModule_ProvideRetrofitModuleFactory
+ com.anonymous.reviews.reviewmodule.di.AppModule_ProvideRetrofitModuleFactory$InstanceHolder
+com/anonymous/reviews/Hilt_ApplicationController.java
+ com.anonymous.reviews.Hilt_ApplicationController
+ com.anonymous.reviews.Hilt_ApplicationController$1
 com/anonymous/reviews/reviewmodule/model/ReviewsViewModel_Factory.java
  com.anonymous.reviews.reviewmodule.model.ReviewsViewModel_Factory
 com/anonymous/reviews/reviewmodule/BerlinTravelDestinationReviews_GeneratedInjector.java
  com.anonymous.reviews.reviewmodule.BerlinTravelDestinationReviews_GeneratedInjector
+com/anonymous/reviews/ApplicationController_ComponentTreeDeps.java
+ com.anonymous.reviews.ApplicationController_ComponentTreeDeps
 com/anonymous/reviews/reviewmodule/factory/ReviewsViewModelFactory_Factory.java
  com.anonymous.reviews.reviewmodule.factory.ReviewsViewModelFactory_Factory

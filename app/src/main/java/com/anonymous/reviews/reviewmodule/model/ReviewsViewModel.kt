@@ -51,7 +51,7 @@ class ReviewsViewModel @Inject constructor(reviewsRepository: RepositoryInterfac
                 is ReviewsData.Error -> {
                     _reviewsError.postValue(reviews.error)
                 }
-                is ReviewsData.Loading -> {}
+                else -> {}
             }
         }
         catch (e: Exception) {

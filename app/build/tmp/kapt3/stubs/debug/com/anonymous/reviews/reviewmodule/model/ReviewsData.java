@@ -5,7 +5,7 @@ import java.lang.System;
 /**
  * Actual response model from DB
  */
-@kotlin.Metadata(mv = {1, 5, 1}, k = 1, d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001:\u0003\u0003\u0004\u0005B\u0007\b\u0004\u00a2\u0006\u0002\u0010\u0002\u0082\u0001\u0003\u0006\u0007\b\u00a8\u0006\t"}, d2 = {"Lcom/anonymous/reviews/reviewmodule/model/ReviewsData;", "", "()V", "Error", "Loading", "Success", "Lcom/anonymous/reviews/reviewmodule/model/ReviewsData$Success;", "Lcom/anonymous/reviews/reviewmodule/model/ReviewsData$Error;", "Lcom/anonymous/reviews/reviewmodule/model/ReviewsData$Loading;", "app_debug"})
+@kotlin.Metadata(mv = {1, 5, 1}, k = 1, d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001:\u0002\u0003\u0004B\u0007\b\u0004\u00a2\u0006\u0002\u0010\u0002\u0082\u0001\u0002\u0005\u0006\u00a8\u0006\u0007"}, d2 = {"Lcom/anonymous/reviews/reviewmodule/model/ReviewsData;", "", "()V", "Error", "Success", "Lcom/anonymous/reviews/reviewmodule/model/ReviewsData$Success;", "Lcom/anonymous/reviews/reviewmodule/model/ReviewsData$Error;", "app_debug"})
 public abstract class ReviewsData {
     
     private ReviewsData() {
@@ -97,16 +97,6 @@ public abstract class ReviewsData {
         @org.jetbrains.annotations.NotNull()
         public final java.lang.String getError() {
             return null;
-        }
-    }
-    
-    @kotlin.Metadata(mv = {1, 5, 1}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/anonymous/reviews/reviewmodule/model/ReviewsData$Loading;", "Lcom/anonymous/reviews/reviewmodule/model/ReviewsData;", "()V", "app_debug"})
-    public static final class Loading extends com.anonymous.reviews.reviewmodule.model.ReviewsData {
-        @org.jetbrains.annotations.NotNull()
-        public static final com.anonymous.reviews.reviewmodule.model.ReviewsData.Loading INSTANCE = null;
-        
-        private Loading() {
-            super();
         }
     }
 }

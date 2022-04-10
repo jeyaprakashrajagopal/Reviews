@@ -339,8 +339,9 @@ public final class DaggerApplicationController_HiltComponents_SingletonC extends
     }
 
     @Override
-    public void injectBerlinTravelDestinationReviews(BerlinTravelDestinationReviews arg0) {
-      injectBerlinTravelDestinationReviews2(arg0);
+    public void injectBerlinTravelDestinationReviews(
+        BerlinTravelDestinationReviews berlinTravelDestinationReviews) {
+      injectBerlinTravelDestinationReviews2(berlinTravelDestinationReviews);
     }
 
     @Override

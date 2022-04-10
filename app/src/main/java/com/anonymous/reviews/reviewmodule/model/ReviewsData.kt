@@ -9,5 +9,4 @@ sealed class ReviewsData
 {
     data class Success(val reviews: List<Review>): ReviewsData()
     data class Error(val error: String): ReviewsData()
-    object Loading : ReviewsData()
 }
