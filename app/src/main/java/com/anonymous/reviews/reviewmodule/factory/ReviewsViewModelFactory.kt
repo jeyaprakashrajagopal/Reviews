@@ -14,6 +14,7 @@ class ReviewsViewModelFactory @Inject constructor(
     private val reviewsAPIServiceImplementation: ReviewsApiServiceImplementation)
         : ViewModelProvider.Factory {
 
+    @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         if(modelClass.isAssignableFrom(ReviewsViewModel::class.java)) {
 

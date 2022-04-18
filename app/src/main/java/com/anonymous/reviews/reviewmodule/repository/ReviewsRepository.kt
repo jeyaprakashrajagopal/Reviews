@@ -7,7 +7,7 @@ import com.anonymous.reviews.reviewmodule.util.RepositoryInterface
 /**
  * Repository class that communicates with the API interface
  */
-class ReviewsRepository (val interfaceImpl: ReviewsApiServiceImplementation) : RepositoryInterface {
+class ReviewsRepository (private val interfaceImpl: ReviewsApiServiceImplementation) : RepositoryInterface {
      override suspend fun getReviews(queryMap: Map<String, Any>) : ReviewsData
      = interfaceImpl.getReviews(queryMap)
 }

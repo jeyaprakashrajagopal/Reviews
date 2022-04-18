@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.anonymous.reviews.ViewModelShould" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-04-10T10:39:22" hostname="jeyaprakashsmbp" time="0.633">
-  <properties/>
-  <testcase name="testDisplayLoaderWhileFetchingReviews" classname="com.anonymous.reviews.ViewModelShould" time="0.63"/>
-  <testcase name="testGetReviewDocs" classname="com.anonymous.reviews.ViewModelShould" time="0.003"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

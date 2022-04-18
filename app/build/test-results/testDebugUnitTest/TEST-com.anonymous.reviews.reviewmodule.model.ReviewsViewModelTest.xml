@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.anonymous.reviews.reviewmodule.model.ReviewsViewModelTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-04-18T15:55:34" hostname="jeyaprakashsmbp" time="1.042">
+  <properties/>
+  <testcase name="reviewsViewModel_networkError_networkErrorReturned" classname="com.anonymous.reviews.reviewmodule.model.ReviewsViewModelTest" time="0.994"/>
+  <testcase name="reviewsViewModel_success_singleReviewDocumentReturned" classname="com.anonymous.reviews.reviewmodule.model.ReviewsViewModelTest" time="0.007"/>
+  <testcase name="reviewsViewModel_success_multipleReviewsReturned" classname="com.anonymous.reviews.reviewmodule.model.ReviewsViewModelTest" time="0.04"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[2022.04.18 17:55:34] (Coverage): Error during class instrumentation: com.anonymous.reviews.reviewmodule.model.ReviewsViewModel: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:34] (Coverage): Error during class instrumentation: kotlinx.coroutines.test.TestCoroutineDispatcher: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:34] (Coverage): Error during class instrumentation: kotlinx.coroutines.internal.ThreadSafeHeap: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlinx.coroutines.scheduling.CoroutineScheduler: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlinx.coroutines.internal.LockFreeTaskQueue: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlinx.coroutines.internal.LockFreeTaskQueueCore: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlinx.coroutines.internal.MainDispatcherLoader: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlinx.coroutines.internal.FastServiceLoader: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlinx.coroutines.test.internal.TestMainDispatcherFactory: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlin.collections.CollectionsKt___CollectionsKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlin.collections.CollectionsKt__CollectionsKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlin.sequences.SequencesKt___SequencesKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlinx.coroutines.EventLoopImplBase: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlinx.coroutines.JobSupport: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlinx.coroutines.intrinsics.CancellableKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlinx.coroutines.internal.DispatchedContinuation: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlinx.coroutines.DispatchedTask: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlinx.coroutines.internal.DispatchedContinuationKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlinx.coroutines.CompletionStateKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlin.text.StringsKt___StringsKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlin.text.StringsKt__StringsKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlin.text.StringsKt__StringsJVMKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlin.text.StringsKt__StringNumberConversionsJVMKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlin.text.StringsKt__IndentKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlinx.coroutines.DispatchedTaskKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlin.collections.MapsKt___MapsKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlin.collections.MapsKt__MapsKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlin.collections.MapsKt__MapWithDefaultKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlin.jvm.internal.CollectionToArray: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlinx.coroutines.BuildersKt__Builders_commonKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlinx.coroutines.JobKt__JobKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlinx.coroutines.DispatchedCoroutine: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlinx.coroutines.scheduling.WorkQueue: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlin.collections.ArraysKt___ArraysKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2022.04.18 17:55:35] (Coverage): Error during class instrumentation: kotlin.collections.ArraysKt__ArraysJVMKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+]]></system-err>
+</testsuite>

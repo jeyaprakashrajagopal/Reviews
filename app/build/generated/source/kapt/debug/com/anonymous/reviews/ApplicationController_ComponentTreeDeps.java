@@ -76,8 +76,8 @@ import hilt_aggregated_deps._dagger_hilt_android_internal_modules_HiltWrapper_Ac
         _dagger_hilt_android_internal_modules_HiltWrapper_ActivityModule.class,
         _com_anonymous_reviews_ApplicationController_GeneratedInjector.class,
         _com_anonymous_reviews_MainActivity_GeneratedInjector.class,
-        _com_anonymous_reviews_reviewmodule_di_AppModule.class,
-        _com_anonymous_reviews_reviewmodule_BerlinTravelDestinationReviews_GeneratedInjector.class
+        _com_anonymous_reviews_reviewmodule_BerlinTravelDestinationReviews_GeneratedInjector.class,
+        _com_anonymous_reviews_reviewmodule_di_AppModule.class
     }
 )
 class ApplicationController_ComponentTreeDeps {
