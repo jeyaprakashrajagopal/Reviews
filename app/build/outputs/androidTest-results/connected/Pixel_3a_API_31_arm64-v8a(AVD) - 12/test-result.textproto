@@ -1,0 +1,82 @@
+# 2022-04-18T16:27:35.154Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 2
+}
+test_status: FAILED
+test_result {
+  test_case {
+    test_class: "BerlinTravelDestinationReviewsFragmentTest"
+    test_package: "com.anonymous.reviews.reviewmodule"
+    test_method: "testReviews_WhenReviewsGetLoaded_areViewsVisible"
+    start_time {
+      seconds: 1650299254
+      nanos: 482000000
+    }
+    end_time {
+      seconds: 1650299254
+      nanos: 821000000
+    }
+  }
+  test_status: FAILED
+  error {
+    error_message: "java.lang.IllegalStateException: Hilt Fragments must be attached to an @AndroidEntryPoint Activity. Found: class androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity\nat dagger.hilt.internal.Preconditions.checkState(Preconditions.java:83)\nat dagger.hilt.android.internal.managers.FragmentComponentManager.createComponent(FragmentComponentManager.java:75)\nat dagger.hilt.android.internal.managers.FragmentComponentManager.generatedComponent(FragmentComponentManager.java:64)\nat com.anonymous.reviews.reviewmodule.Hilt_BerlinTravelDestinationReviews.generatedComponent(Hilt_BerlinTravelDestinationReviews.java:86)\nat com.anonymous.reviews.reviewmodule.Hilt_BerlinTravelDestinationReviews.inject(Hilt_BerlinTravelDestinationReviews.java:108)\nat com.anonymous.reviews.reviewmodule.Hilt_BerlinTravelDestinationReviews.onAttach(Hilt_BerlinTravelDestinationReviews.java:59)\nat androidx.fragment.app.Fragment.onAttach(Fragment.java:1783)\nat com.anonymous.reviews.reviewmodule.Hilt_BerlinTravelDestinationReviews.onAttach(Hilt_BerlinTravelDestinationReviews.java:47)\nat androidx.fragment.app.Fragment.performAttach(Fragment.java:2922)\nat androidx.fragment.app.FragmentStateManager.attach(FragmentStateManager.java:464)\nat androidx.fragment.app.FragmentStateManager.moveToExpectedState(FragmentStateManager.java:275)\nat androidx.fragment.app.FragmentManager.executeOpsTogether(FragmentManager.java:2189)\nat androidx.fragment.app.FragmentManager.removeRedundantOperationsAndExecute(FragmentManager.java:2100)\nat androidx.fragment.app.FragmentManager.execSingleAction(FragmentManager.java:1971)\nat androidx.fragment.app.BackStackRecord.commitNow(BackStackRecord.java:305)\nat androidx.fragment.app.testing.FragmentScenario$Companion$internalLaunch$2.perform(FragmentScenario.kt:618)\nat androidx.fragment.app.testing.FragmentScenario$Companion$internalLaunch$2.perform(FragmentScenario.kt:401)\nat androidx.test.core.app.ActivityScenario.lambda$onActivity$2$ActivityScenario(ActivityScenario.java:660)\nat androidx.test.core.app.ActivityScenario$$Lambda$4.run(Unknown Source:4)\nat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)\nat java.util.concurrent.FutureTask.run(FutureTask.java:266)\nat android.app.Instrumentation$SyncRunnable.run(Instrumentation.java:2266)\nat android.os.Handler.handleCallback(Handler.java:938)\nat android.os.Handler.dispatchMessage(Handler.java:99)\nat android.os.Looper.loopOnce(Looper.java:201)\nat android.os.Looper.loop(Looper.java:288)\nat android.app.ActivityThread.main(ActivityThread.java:7839)\nat java.lang.reflect.Method.invoke(Native Method)\nat com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)\nat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)"
+    error_type: "java.lang.IllegalStateException"
+    stack_trace: "java.lang.IllegalStateException: Hilt Fragments must be attached to an @AndroidEntryPoint Activity. Found: class androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity\nat dagger.hilt.internal.Preconditions.checkState(Preconditions.java:83)\nat dagger.hilt.android.internal.managers.FragmentComponentManager.createComponent(FragmentComponentManager.java:75)\nat dagger.hilt.android.internal.managers.FragmentComponentManager.generatedComponent(FragmentComponentManager.java:64)\nat com.anonymous.reviews.reviewmodule.Hilt_BerlinTravelDestinationReviews.generatedComponent(Hilt_BerlinTravelDestinationReviews.java:86)\nat com.anonymous.reviews.reviewmodule.Hilt_BerlinTravelDestinationReviews.inject(Hilt_BerlinTravelDestinationReviews.java:108)\nat com.anonymous.reviews.reviewmodule.Hilt_BerlinTravelDestinationReviews.onAttach(Hilt_BerlinTravelDestinationReviews.java:59)\nat androidx.fragment.app.Fragment.onAttach(Fragment.java:1783)\nat com.anonymous.reviews.reviewmodule.Hilt_BerlinTravelDestinationReviews.onAttach(Hilt_BerlinTravelDestinationReviews.java:47)\nat androidx.fragment.app.Fragment.performAttach(Fragment.java:2922)\nat androidx.fragment.app.FragmentStateManager.attach(FragmentStateManager.java:464)\nat androidx.fragment.app.FragmentStateManager.moveToExpectedState(FragmentStateManager.java:275)\nat androidx.fragment.app.FragmentManager.executeOpsTogether(FragmentManager.java:2189)\nat androidx.fragment.app.FragmentManager.removeRedundantOperationsAndExecute(FragmentManager.java:2100)\nat androidx.fragment.app.FragmentManager.execSingleAction(FragmentManager.java:1971)\nat androidx.fragment.app.BackStackRecord.commitNow(BackStackRecord.java:305)\nat androidx.fragment.app.testing.FragmentScenario$Companion$internalLaunch$2.perform(FragmentScenario.kt:618)\nat androidx.fragment.app.testing.FragmentScenario$Companion$internalLaunch$2.perform(FragmentScenario.kt:401)\nat androidx.test.core.app.ActivityScenario.lambda$onActivity$2$ActivityScenario(ActivityScenario.java:660)\nat androidx.test.core.app.ActivityScenario$$Lambda$4.run(Unknown Source:4)\nat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)\nat java.util.concurrent.FutureTask.run(FutureTask.java:266)\nat android.app.Instrumentation$SyncRunnable.run(Instrumentation.java:2266)\nat android.os.Handler.handleCallback(Handler.java:938)\nat android.os.Handler.dispatchMessage(Handler.java:99)\nat android.os.Looper.loopOnce(Looper.java:201)\nat android.os.Looper.loop(Looper.java:288)\nat android.app.ActivityThread.main(ActivityThread.java:7839)\nat java.lang.reflect.Method.invoke(Native Method)\nat com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)\nat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)"
+  }
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/outputs/androidTest-results/connected/Pixel_3a_API_31_arm64-v8a(AVD) - 12/logcat-com.anonymous.reviews.reviewmodule.BerlinTravelDestinationReviewsFragmentTest-testReviews_WhenReviewsGetLoaded_areViewsVisible.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/outputs/androidTest-results/connected/Pixel_3a_API_31_arm64-v8a(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/outputs/androidTest-results/connected/Pixel_3a_API_31_arm64-v8a(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/outputs/androidTest-results/connected/Pixel_3a_API_31_arm64-v8a(AVD) - 12/cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/outputs/androidTest-results/connected/Pixel_3a_API_31_arm64-v8a(AVD) - 12/testlog/test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}
+issue {
+  namespace {
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  severity: SEVERE
+  code: 1
+  name: "INSTRUMENTATION_FAILED"
+  message: "Test run failed to complete. Instrumentation run failed due to Process crashed."
+}

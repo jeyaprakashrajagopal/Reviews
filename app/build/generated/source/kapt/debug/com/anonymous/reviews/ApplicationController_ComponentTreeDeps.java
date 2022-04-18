@@ -37,6 +37,7 @@ import hilt_aggregated_deps._dagger_hilt_android_internal_managers_ViewComponent
 import hilt_aggregated_deps._dagger_hilt_android_internal_managers_ViewComponentManager_ViewWithFragmentComponentBuilderEntryPoint;
 import hilt_aggregated_deps._dagger_hilt_android_internal_modules_ApplicationContextModule;
 import hilt_aggregated_deps._dagger_hilt_android_internal_modules_HiltWrapper_ActivityModule;
+import javax.annotation.processing.Generated;
 
 @ComponentTreeDeps(
     rootDeps = _com_anonymous_reviews_ApplicationController.class,
@@ -74,11 +75,12 @@ import hilt_aggregated_deps._dagger_hilt_android_internal_modules_HiltWrapper_Ac
         _dagger_hilt_android_internal_managers_ViewComponentManager_ViewWithFragmentComponentBuilderEntryPoint.class,
         _dagger_hilt_android_internal_modules_ApplicationContextModule.class,
         _dagger_hilt_android_internal_modules_HiltWrapper_ActivityModule.class,
-        _com_anonymous_reviews_ApplicationController_GeneratedInjector.class,
-        _com_anonymous_reviews_MainActivity_GeneratedInjector.class,
+        _com_anonymous_reviews_reviewmodule_di_AppModule.class,
         _com_anonymous_reviews_reviewmodule_BerlinTravelDestinationReviews_GeneratedInjector.class,
-        _com_anonymous_reviews_reviewmodule_di_AppModule.class
+        _com_anonymous_reviews_MainActivity_GeneratedInjector.class,
+        _com_anonymous_reviews_ApplicationController_GeneratedInjector.class
     }
 )
+@Generated("dagger.hilt.processor.internal.root.RootProcessor")
 class ApplicationController_ComponentTreeDeps {
 }

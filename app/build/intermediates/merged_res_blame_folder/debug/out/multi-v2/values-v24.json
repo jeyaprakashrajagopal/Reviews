@@ -4,7 +4,7 @@
             "outputFile": "/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/59197cecfd6c7cc7576c3e24a891383a/transformed/appcompat-1.2.0/res/values-v24/values-v24.xml",
+                    "source": "/Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/193dad0f00a630a9a0218443e0b1a6e5/transformed/appcompat-1.3.1/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/fecbdcd8002d52f35d76bf24961e0a12/transformed/media-1.0.0/res/values-v24/values-v24.xml",
+                    "source": "/Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/509087df7f20d7b8fa1ea5f0bd81c46b/transformed/media-1.0.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

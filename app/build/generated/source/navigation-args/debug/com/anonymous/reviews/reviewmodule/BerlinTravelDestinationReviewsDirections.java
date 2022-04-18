@@ -27,7 +27,6 @@ public class BerlinTravelDestinationReviewsDirections {
   public static class ActionReviewsFragmentToReviewDetailsFragment implements NavDirections {
     private final HashMap arguments = new HashMap();
 
-    @SuppressWarnings("unchecked")
     private ActionReviewsFragmentToReviewDetailsFragment(@NonNull Review selectedReview) {
       if (selectedReview == null) {
         throw new IllegalArgumentException("Argument \"selectedReview\" is marked as non-null but was passed a null value.");
@@ -36,7 +35,6 @@ public class BerlinTravelDestinationReviewsDirections {
     }
 
     @NonNull
-    @SuppressWarnings("unchecked")
     public ActionReviewsFragmentToReviewDetailsFragment setSelectedReview(
         @NonNull Review selectedReview) {
       if (selectedReview == null) {

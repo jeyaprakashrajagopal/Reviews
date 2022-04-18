@@ -6,7 +6,9 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
+8-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="30" />
+9-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 11-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:4:5-78
@@ -15,12 +17,12 @@
 12-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:5:5-67
 12-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:5:22-64
 13    <uses-permission android:name="android.permission.REORDER_TASKS" /> <!-- Permission will be merged into the manifest of the hosting app. -->
-13-->[androidx.fragment:fragment-testing:1.3.6] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/abba9a43fc4655e8de6a49cbc3b6d6b3/transformed/jetified-fragment-testing-1.3.6/AndroidManifest.xml:25:5-72
-13-->[androidx.fragment:fragment-testing:1.3.6] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/abba9a43fc4655e8de6a49cbc3b6d6b3/transformed/jetified-fragment-testing-1.3.6/AndroidManifest.xml:25:22-69
+13-->[androidx.fragment:fragment-testing:1.3.6] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/c39c4a310e68627106a9596b2817636f/transformed/jetified-fragment-testing-1.3.6/AndroidManifest.xml:25:5-72
+13-->[androidx.fragment:fragment-testing:1.3.6] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/c39c4a310e68627106a9596b2817636f/transformed/jetified-fragment-testing-1.3.6/AndroidManifest.xml:25:22-69
 14    <!-- Is required to launch foreground extraction service for targetSdkVersion 28+. -->
 15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-15-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:8:3-74
-15-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:8:20-72
+15-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:8:3-74
+15-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:8:20-72
 16
 17    <application
 17-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:6:5-23:19
@@ -29,7 +31,7 @@
 19        android:allowBackup="false"
 19-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:8:9-36
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-20-->[androidx.core:core:1.6.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/45f8ee1120a3a3f8bc96563d3fdbce2b/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+20-->[androidx.core:core:1.6.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8a648b52e82ad35a0f2157f78fb763c/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
 21        android:debuggable="true"
 22        android:icon="@mipmap/ic_launcher"
 22-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:9:9-43
@@ -39,150 +41,144 @@
 24-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:11:9-54
 25        android:supportsRtl="true"
 25-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:12:9-35
-26        android:theme="@style/Theme.Reviews" >
-26-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:13:9-45
-27        <activity
-27-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/debug/AndroidManifest.xml:5:9-8:20
-28            android:name="com.anonymous.reviews.HiltTestActivity"
-28-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/debug/AndroidManifest.xml:6:13-45
-29            android:exported="false" >
-29-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/debug/AndroidManifest.xml:7:13-37
-30        </activity>
-31        <activity
-31-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:14:9-22:20
-32            android:name="com.anonymous.reviews.MainActivity"
-32-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:15:13-41
-33            android:exported="true" >
-33-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:16:13-36
-34            <intent-filter>
-34-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:17:13-21:29
-35                <action android:name="android.intent.action.MAIN" />
-35-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:18:17-69
-35-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:18:25-66
-36
-37                <category android:name="android.intent.category.LAUNCHER" />
-37-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:20:17-77
-37-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:20:27-74
-38            </intent-filter>
-39        </activity>
-40        <activity
-40-->[androidx.fragment:fragment-testing:1.3.6] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/abba9a43fc4655e8de6a49cbc3b6d6b3/transformed/jetified-fragment-testing-1.3.6/AndroidManifest.xml:28:9-37:20
-41            android:name="androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity"
-41-->[androidx.fragment:fragment-testing:1.3.6] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/abba9a43fc4655e8de6a49cbc3b6d6b3/transformed/jetified-fragment-testing-1.3.6/AndroidManifest.xml:29:13-96
-42            android:exported="true"
-42-->[androidx.fragment:fragment-testing:1.3.6] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/abba9a43fc4655e8de6a49cbc3b6d6b3/transformed/jetified-fragment-testing-1.3.6/AndroidManifest.xml:30:13-36
-43            android:multiprocess="true"
-43-->[androidx.fragment:fragment-testing:1.3.6] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/abba9a43fc4655e8de6a49cbc3b6d6b3/transformed/jetified-fragment-testing-1.3.6/AndroidManifest.xml:31:13-40
-44            android:taskAffinity=""
-44-->[androidx.fragment:fragment-testing:1.3.6] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/abba9a43fc4655e8de6a49cbc3b6d6b3/transformed/jetified-fragment-testing-1.3.6/AndroidManifest.xml:32:13-36
-45            android:theme="@style/FragmentScenarioEmptyFragmentActivityTheme" >
-45-->[androidx.fragment:fragment-testing:1.3.6] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/abba9a43fc4655e8de6a49cbc3b6d6b3/transformed/jetified-fragment-testing-1.3.6/AndroidManifest.xml:33:13-78
-46            <intent-filter>
-46-->[androidx.fragment:fragment-testing:1.3.6] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/abba9a43fc4655e8de6a49cbc3b6d6b3/transformed/jetified-fragment-testing-1.3.6/AndroidManifest.xml:34:13-36:29
-47                <action android:name="android.intent.action.MAIN" />
-47-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:18:17-69
-47-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:18:25-66
-48            </intent-filter>
-49        </activity>
-50        <activity
-50-->[androidx.test:core:1.3.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/7d7594b6011fbfcaf1b2c03a95a5120e/transformed/jetified-core-1.3.0/AndroidManifest.xml:27:9-33:20
-51            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
-51-->[androidx.test:core:1.3.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/7d7594b6011fbfcaf1b2c03a95a5120e/transformed/jetified-core-1.3.0/AndroidManifest.xml:28:13-99
-52            android:theme="@android:style/Theme" >
-52-->[androidx.test:core:1.3.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/7d7594b6011fbfcaf1b2c03a95a5120e/transformed/jetified-core-1.3.0/AndroidManifest.xml:29:13-49
-53            <intent-filter>
-53-->[androidx.fragment:fragment-testing:1.3.6] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/abba9a43fc4655e8de6a49cbc3b6d6b3/transformed/jetified-fragment-testing-1.3.6/AndroidManifest.xml:34:13-36:29
-54                <action android:name="android.intent.action.MAIN" />
-54-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:18:17-69
-54-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:18:25-66
-55            </intent-filter>
-56        </activity>
-57        <activity
-57-->[androidx.test:core:1.3.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/7d7594b6011fbfcaf1b2c03a95a5120e/transformed/jetified-core-1.3.0/AndroidManifest.xml:34:9-40:20
-58            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
-58-->[androidx.test:core:1.3.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/7d7594b6011fbfcaf1b2c03a95a5120e/transformed/jetified-core-1.3.0/AndroidManifest.xml:35:13-95
-59            android:theme="@android:style/Theme" >
-59-->[androidx.test:core:1.3.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/7d7594b6011fbfcaf1b2c03a95a5120e/transformed/jetified-core-1.3.0/AndroidManifest.xml:36:13-49
-60            <intent-filter>
-60-->[androidx.fragment:fragment-testing:1.3.6] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/abba9a43fc4655e8de6a49cbc3b6d6b3/transformed/jetified-fragment-testing-1.3.6/AndroidManifest.xml:34:13-36:29
-61                <action android:name="android.intent.action.MAIN" />
-61-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:18:17-69
-61-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:18:25-66
-62            </intent-filter>
-63        </activity>
-64        <activity
-64-->[androidx.test:core:1.3.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/7d7594b6011fbfcaf1b2c03a95a5120e/transformed/jetified-core-1.3.0/AndroidManifest.xml:41:9-47:20
-65            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
-65-->[androidx.test:core:1.3.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/7d7594b6011fbfcaf1b2c03a95a5120e/transformed/jetified-core-1.3.0/AndroidManifest.xml:42:13-103
-66            android:theme="@android:style/Theme.Dialog" >
-66-->[androidx.test:core:1.3.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/7d7594b6011fbfcaf1b2c03a95a5120e/transformed/jetified-core-1.3.0/AndroidManifest.xml:43:13-56
-67            <intent-filter>
-67-->[androidx.fragment:fragment-testing:1.3.6] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/abba9a43fc4655e8de6a49cbc3b6d6b3/transformed/jetified-fragment-testing-1.3.6/AndroidManifest.xml:34:13-36:29
-68                <action android:name="android.intent.action.MAIN" />
-68-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:18:17-69
-68-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:18:25-66
-69            </intent-filter>
-70        </activity>
-71
-72        <provider
-72-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/0d6459d089803f6f4c927a7f7ccad76b/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
-73            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-73-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/0d6459d089803f6f4c927a7f7ccad76b/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
-74            android:authorities="com.anonymous.reviews.lifecycle-process"
-74-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/0d6459d089803f6f4c927a7f7ccad76b/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
-75            android:exported="false"
-75-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/0d6459d089803f6f4c927a7f7ccad76b/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
-76            android:multiprocess="true" /> <!-- The activities will be merged into the manifest of the hosting app. -->
-76-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/0d6459d089803f6f4c927a7f7ccad76b/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
-77        <activity
-77-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:12:5-271
-78            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
-78-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:12:15-102
-79            android:enabled="false"
-79-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:12:103-126
-80            android:exported="false"
-80-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:12:127-151
-81            android:launchMode="singleInstance"
-81-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:12:204-239
-82            android:process=":playcore_missing_splits_activity"
-82-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:12:152-203
-83            android:stateNotNeeded="true" />
-83-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:12:240-269
-84        <activity
-84-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:13:5-226
-85            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
-85-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:13:15-95
-86            android:enabled="false"
-86-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:13:96-119
-87            android:exported="false"
-87-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:13:120-144
-88            android:stateNotNeeded="true"
-88-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:13:145-174
-89            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The services will be merged into the manifest of the hosting app. -->
-89-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:13:175-224
-90        <service
-90-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:16:5-18:15
-91            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
-91-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:16:14-95
-92            android:enabled="false"
-92-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:16:96-119
-93            android:exported="true" >
-93-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:16:120-143
-94            <meta-data
-94-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:17:7-108
-95                android:name="com.google.android.play.core.assetpacks.versionCode"
-95-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:17:18-84
-96                android:value="10901" />
-96-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:17:85-106
-97        </service>
-98        <service
-98-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:19:5-147
-99            android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"
-99-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:19:14-96
-100            android:enabled="false"
-100-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:19:97-120
-101            android:exported="false" />
-101-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/f3fb03c55065db0774b95718a3fdb2e7/transformed/jetified-core-1.9.1/AndroidManifest.xml:19:121-145
-102    </application>
-103
-104</manifest>
+26        android:testOnly="true"
+27        android:theme="@style/Theme.Reviews" >
+27-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:13:9-45
+28        <activity
+28-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:14:9-22:20
+29            android:name="com.anonymous.reviews.MainActivity"
+29-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:15:13-41
+30            android:exported="true" >
+30-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:16:13-36
+31            <intent-filter>
+31-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:17:13-21:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:18:17-69
+32-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:18:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:20:17-77
+34-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:20:27-74
+35            </intent-filter>
+36        </activity>
+37        <activity
+37-->[androidx.fragment:fragment-testing:1.3.6] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/c39c4a310e68627106a9596b2817636f/transformed/jetified-fragment-testing-1.3.6/AndroidManifest.xml:28:9-37:20
+38            android:name="androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity"
+38-->[androidx.fragment:fragment-testing:1.3.6] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/c39c4a310e68627106a9596b2817636f/transformed/jetified-fragment-testing-1.3.6/AndroidManifest.xml:29:13-96
+39            android:exported="true"
+39-->[androidx.fragment:fragment-testing:1.3.6] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/c39c4a310e68627106a9596b2817636f/transformed/jetified-fragment-testing-1.3.6/AndroidManifest.xml:30:13-36
+40            android:multiprocess="true"
+40-->[androidx.fragment:fragment-testing:1.3.6] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/c39c4a310e68627106a9596b2817636f/transformed/jetified-fragment-testing-1.3.6/AndroidManifest.xml:31:13-40
+41            android:taskAffinity=""
+41-->[androidx.fragment:fragment-testing:1.3.6] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/c39c4a310e68627106a9596b2817636f/transformed/jetified-fragment-testing-1.3.6/AndroidManifest.xml:32:13-36
+42            android:theme="@style/FragmentScenarioEmptyFragmentActivityTheme" >
+42-->[androidx.fragment:fragment-testing:1.3.6] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/c39c4a310e68627106a9596b2817636f/transformed/jetified-fragment-testing-1.3.6/AndroidManifest.xml:33:13-78
+43            <intent-filter>
+43-->[androidx.fragment:fragment-testing:1.3.6] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/c39c4a310e68627106a9596b2817636f/transformed/jetified-fragment-testing-1.3.6/AndroidManifest.xml:34:13-36:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:18:17-69
+44-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:18:25-66
+45            </intent-filter>
+46        </activity>
+47        <activity
+47-->[androidx.test:core:1.3.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/0cf60675e2df8cdf82d347314e44bbd8/transformed/jetified-core-1.3.0/AndroidManifest.xml:27:9-33:20
+48            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+48-->[androidx.test:core:1.3.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/0cf60675e2df8cdf82d347314e44bbd8/transformed/jetified-core-1.3.0/AndroidManifest.xml:28:13-99
+49            android:theme="@android:style/Theme" >
+49-->[androidx.test:core:1.3.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/0cf60675e2df8cdf82d347314e44bbd8/transformed/jetified-core-1.3.0/AndroidManifest.xml:29:13-49
+50            <intent-filter>
+50-->[androidx.fragment:fragment-testing:1.3.6] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/c39c4a310e68627106a9596b2817636f/transformed/jetified-fragment-testing-1.3.6/AndroidManifest.xml:34:13-36:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:18:17-69
+51-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:18:25-66
+52            </intent-filter>
+53        </activity>
+54        <activity
+54-->[androidx.test:core:1.3.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/0cf60675e2df8cdf82d347314e44bbd8/transformed/jetified-core-1.3.0/AndroidManifest.xml:34:9-40:20
+55            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+55-->[androidx.test:core:1.3.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/0cf60675e2df8cdf82d347314e44bbd8/transformed/jetified-core-1.3.0/AndroidManifest.xml:35:13-95
+56            android:theme="@android:style/Theme" >
+56-->[androidx.test:core:1.3.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/0cf60675e2df8cdf82d347314e44bbd8/transformed/jetified-core-1.3.0/AndroidManifest.xml:36:13-49
+57            <intent-filter>
+57-->[androidx.fragment:fragment-testing:1.3.6] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/c39c4a310e68627106a9596b2817636f/transformed/jetified-fragment-testing-1.3.6/AndroidManifest.xml:34:13-36:29
+58                <action android:name="android.intent.action.MAIN" />
+58-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:18:17-69
+58-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:18:25-66
+59            </intent-filter>
+60        </activity>
+61        <activity
+61-->[androidx.test:core:1.3.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/0cf60675e2df8cdf82d347314e44bbd8/transformed/jetified-core-1.3.0/AndroidManifest.xml:41:9-47:20
+62            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+62-->[androidx.test:core:1.3.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/0cf60675e2df8cdf82d347314e44bbd8/transformed/jetified-core-1.3.0/AndroidManifest.xml:42:13-103
+63            android:theme="@android:style/Theme.Dialog" >
+63-->[androidx.test:core:1.3.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/0cf60675e2df8cdf82d347314e44bbd8/transformed/jetified-core-1.3.0/AndroidManifest.xml:43:13-56
+64            <intent-filter>
+64-->[androidx.fragment:fragment-testing:1.3.6] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/c39c4a310e68627106a9596b2817636f/transformed/jetified-fragment-testing-1.3.6/AndroidManifest.xml:34:13-36:29
+65                <action android:name="android.intent.action.MAIN" />
+65-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:18:17-69
+65-->/Users/jeyaprakashrajagopal/ReviewsGit/Reviews/app/src/main/AndroidManifest.xml:18:25-66
+66            </intent-filter>
+67        </activity>
+68
+69        <provider
+69-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/27d54262297afd59d2722083e9a6e1bd/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+70            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+70-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/27d54262297afd59d2722083e9a6e1bd/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+71            android:authorities="com.anonymous.reviews.lifecycle-process"
+71-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/27d54262297afd59d2722083e9a6e1bd/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+72            android:exported="false"
+72-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/27d54262297afd59d2722083e9a6e1bd/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+73            android:multiprocess="true" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+73-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/27d54262297afd59d2722083e9a6e1bd/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+74        <activity
+74-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:12:5-271
+75            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+75-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:12:15-102
+76            android:enabled="false"
+76-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:12:103-126
+77            android:exported="false"
+77-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:12:127-151
+78            android:launchMode="singleInstance"
+78-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:12:204-239
+79            android:process=":playcore_missing_splits_activity"
+79-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:12:152-203
+80            android:stateNotNeeded="true" />
+80-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:12:240-269
+81        <activity
+81-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:13:5-226
+82            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+82-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:13:15-95
+83            android:enabled="false"
+83-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:13:96-119
+84            android:exported="false"
+84-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:13:120-144
+85            android:stateNotNeeded="true"
+85-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:13:145-174
+86            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The services will be merged into the manifest of the hosting app. -->
+86-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:13:175-224
+87        <service
+87-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:16:5-18:15
+88            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
+88-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:16:14-95
+89            android:enabled="false"
+89-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:16:96-119
+90            android:exported="true" >
+90-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:16:120-143
+91            <meta-data
+91-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:17:7-108
+92                android:name="com.google.android.play.core.assetpacks.versionCode"
+92-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:17:18-84
+93                android:value="10901" />
+93-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:17:85-106
+94        </service>
+95        <service
+95-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:19:5-147
+96            android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"
+96-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:19:14-96
+97            android:enabled="false"
+97-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:19:97-120
+98            android:exported="false" />
+98-->[com.google.android.play:core:1.9.1] /Users/jeyaprakashrajagopal/.gradle/caches/transforms-3/d8ddb413b28471a0954e6d73f8d0a31c/transformed/jetified-core-1.9.1/AndroidManifest.xml:19:121-145
+99    </application>
+100
+101</manifest>

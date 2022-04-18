@@ -15,13 +15,11 @@ import org.junit.runner.RunWith
 @RunWith(AndroidJUnit4::class)
 class ReviewsViewModelFunctionsTest {
     // Launching the main activity before the test begins and destroys it after the test
-    private lateinit var repository: FakeRepositorySource
     private lateinit var viewModel : ReviewsViewModel
 
     @Before
     fun setUp() {
-        repository = FakeRepositorySource()
-        viewModel = ReviewsViewModel(repository)
+        viewModel = ReviewsViewModel(FakeRepositorySource)
     }
 
     @Test

@@ -1,0 +1,98 @@
+04-18 18:27:31.689 20489 20505 I TestRunner: started: testReviews_WhenReviewsGetLoaded_areViewsVisible(com.anonymous.reviews.reviewmodule.BerlinTravelDestinationReviewsFragmentTest)
+04-18 18:27:31.695 20489 20505 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+04-18 18:27:31.697 20489 20505 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10149; state: DISABLED
+04-18 18:27:31.708   681  1009 D SplashScreenView: Build android.window.SplashScreenView{ecf106d V.E...... ......ID 0,0-0,0}
+04-18 18:27:31.708   681  1009 D SplashScreenView: Icon: view: null drawable: null size: 0
+04-18 18:27:31.708   681  1009 D SplashScreenView: Branding: view: android.view.View{67964a2 G.ED..... ......I. 0,0-0,0 #10204a6 android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+04-18 18:27:31.739 20489 20509 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+04-18 18:27:31.743 20489 20509 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+04-18 18:27:31.750 20489 20509 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+04-18 18:27:31.758   296   448 D goldfish-address-space: claimShared: Ask to claim region [0x1f64a4000 0x1f6dcc000]
+04-18 18:27:31.776   296   448 D goldfish-address-space: claimShared: Ask to claim region [0x1f6dcc000 0x1f76f4000]
+04-18 18:27:31.790   296   448 D goldfish-address-space: claimShared: Ask to claim region [0x1f4928000 0x1f5250000]
+04-18 18:27:31.810 20489 20489 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity@eb3649f in: PRE_ON_CREATE
+04-18 18:27:31.811 20489 20489 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.anonymous.reviews/androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity (has extras) }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.anonymous.reviews/androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity (has extras) }, activity=androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity@eb3649f
+04-18 18:27:31.838 18161 18161 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=66, right=0, bottom=132}
+04-18 18:27:31.840 20489 20489 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity@eb3649f in: CREATED
+04-18 18:27:31.841 20489 20489 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.anonymous.reviews/androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity (has extras) }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.anonymous.reviews/androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity (has extras) }, activity=androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity@eb3649f
+04-18 18:27:31.842 20489 20489 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity@eb3649f in: STARTED
+04-18 18:27:31.843 18161 18161 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=66, right=0, bottom=132}
+04-18 18:27:31.843 20489 20489 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.anonymous.reviews/androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity (has extras) }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.anonymous.reviews/androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity (has extras) }, activity=androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity@eb3649f
+04-18 18:27:31.850  1406  1406 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
+04-18 18:27:31.850  1406  1406 E HwDetectorWithState: a: 3
+04-18 18:27:31.854 20489 20489 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity@eb3649f in: RESUMED
+04-18 18:27:31.854 20489 20489 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.anonymous.reviews/androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity (has extras) }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.anonymous.reviews/androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity (has extras) }, activity=androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity@eb3649f
+04-18 18:27:31.854 20489 20489 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity@eb3649f in: PAUSED
+04-18 18:27:31.855 20489 20489 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.anonymous.reviews/androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity (has extras) }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.anonymous.reviews/androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity (has extras) }, activity=androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity@eb3649f
+04-18 18:27:31.871   681  1011 D EGL_emulation: app_time_stats: avg=11193.07ms min=151.29ms max=55229.95ms count=5
+04-18 18:27:31.881 20489 20489 D LifecycleMonitor: Lifecycle status change: androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity@8dd733 in: PRE_ON_CREATE
+04-18 18:27:31.882 20489 20489 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+04-18 18:27:31.909 20489 20489 D LifecycleMonitor: Lifecycle status change: androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity@8dd733 in: CREATED
+04-18 18:27:31.909 20489 20489 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity@8dd733
+04-18 18:27:31.910 20489 20489 D LifecycleMonitor: Lifecycle status change: androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity@8dd733 in: STARTED
+04-18 18:27:31.910 20489 20489 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity@8dd733
+04-18 18:27:31.911 20489 20489 D LifecycleMonitor: Lifecycle status change: androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity@8dd733 in: RESUMED
+04-18 18:27:31.911 20489 20489 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity@8dd733
+04-18 18:27:31.915 20489 20489 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity@eb3649f in: STOPPED
+04-18 18:27:31.915 20489 20489 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.anonymous.reviews/androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity (has extras) }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.anonymous.reviews/androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity (has extras) }, activity=androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity@eb3649f
+04-18 18:27:31.936 20489 20508 D HostConnection: createUnique: call
+04-18 18:27:31.938 20489 20508 D HostConnection: HostConnection::get() New Host Connection established 0xb400007ce78de690, tid 20508
+04-18 18:27:31.940 20489 20508 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+04-18 18:27:31.942   150   150 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device VINTF manifest.
+04-18 18:27:31.942 20489 20508 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+04-18 18:27:31.943 20489 20508 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+04-18 18:27:31.944 20489 20508 D EGL_emulation: eglCreateContext: 0xb400007ce78e0250: maj 3 min 0 rcv 3
+04-18 18:27:31.946 20489 20508 D EGL_emulation: eglMakeCurrent: 0xb400007ce78e0250: ver 3 0 (tinfo 0x7f0c91b080) (first time)
+04-18 18:27:31.950   356   460 E HWComposer: getSupportedContentTypes: getSupportedContentTypes failed for display 4619827259835644672: Unsupported (8)
+04-18 18:27:31.951   150   150 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+04-18 18:27:31.951 20489 20508 I Gralloc4: mapper 4.x is not supported
+04-18 18:27:31.951 20489 20508 D HostConnection: createUnique: call
+04-18 18:27:31.952 20489 20508 D HostConnection: HostConnection::get() New Host Connection established 0xb400007ce78de750, tid 20508
+04-18 18:27:31.952 20489 20508 D goldfish-address-space: allocate: Ask for block of size 0x100
+04-18 18:27:31.952 20489 20508 D goldfish-address-space: allocate: ioctl allocate returned offset 0x1f3ff8000 size 0x8000
+04-18 18:27:31.952   150   150 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest.
+04-18 18:27:31.953 20489 20508 W Gralloc4: allocator 4.x is not supported
+04-18 18:27:31.953   296   448 D goldfish-address-space: claimShared: Ask to claim region [0x1f4000000 0x1f4928000]
+04-18 18:27:31.955 20489 20508 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+04-18 18:27:31.994   296   448 D goldfish-address-space: claimShared: Ask to claim region [0x1f5250000 0x1f5b78000]
+04-18 18:27:31.999   492   523 I ActivityTaskManager: Displayed com.anonymous.reviews/androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity: +300ms
+04-18 18:27:32.004   296   448 D goldfish-address-space: claimShared: Ask to claim region [0x1f5b78000 0x1f64a0000]
+04-18 18:27:32.016   492  4553 W InputManager-JNI: Input channel object '4ce1530 Splash Screen com.anonymous.reviews (client)' was disposed without first being removed with the input manager!
+04-18 18:27:32.024  1340  1340 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420
+04-18 18:27:32.025  1340  1340 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002
+04-18 18:27:32.026  1340  1340 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+04-18 18:27:32.040 20489 20505 E TestRunner: failed: testReviews_WhenReviewsGetLoaded_areViewsVisible(com.anonymous.reviews.reviewmodule.BerlinTravelDestinationReviewsFragmentTest)
+04-18 18:27:32.040 20489 20505 E TestRunner: ----- begin exception -----
+04-18 18:27:32.041 20489 20505 E TestRunner: java.lang.IllegalStateException: Hilt Fragments must be attached to an @AndroidEntryPoint Activity. Found: class androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at dagger.hilt.internal.Preconditions.checkState(Preconditions.java:83)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at dagger.hilt.android.internal.managers.FragmentComponentManager.createComponent(FragmentComponentManager.java:75)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at dagger.hilt.android.internal.managers.FragmentComponentManager.generatedComponent(FragmentComponentManager.java:64)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at com.anonymous.reviews.reviewmodule.Hilt_BerlinTravelDestinationReviews.generatedComponent(Hilt_BerlinTravelDestinationReviews.java:86)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at com.anonymous.reviews.reviewmodule.Hilt_BerlinTravelDestinationReviews.inject(Hilt_BerlinTravelDestinationReviews.java:108)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at com.anonymous.reviews.reviewmodule.Hilt_BerlinTravelDestinationReviews.onAttach(Hilt_BerlinTravelDestinationReviews.java:59)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at androidx.fragment.app.Fragment.onAttach(Fragment.java:1783)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at com.anonymous.reviews.reviewmodule.Hilt_BerlinTravelDestinationReviews.onAttach(Hilt_BerlinTravelDestinationReviews.java:47)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at androidx.fragment.app.Fragment.performAttach(Fragment.java:2922)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at androidx.fragment.app.FragmentStateManager.attach(FragmentStateManager.java:464)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at androidx.fragment.app.FragmentStateManager.moveToExpectedState(FragmentStateManager.java:275)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at androidx.fragment.app.FragmentManager.executeOpsTogether(FragmentManager.java:2189)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at androidx.fragment.app.FragmentManager.removeRedundantOperationsAndExecute(FragmentManager.java:2100)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at androidx.fragment.app.FragmentManager.execSingleAction(FragmentManager.java:1971)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at androidx.fragment.app.BackStackRecord.commitNow(BackStackRecord.java:305)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at androidx.fragment.app.testing.FragmentScenario$Companion$internalLaunch$2.perform(FragmentScenario.kt:618)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at androidx.fragment.app.testing.FragmentScenario$Companion$internalLaunch$2.perform(FragmentScenario.kt:401)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at androidx.test.core.app.ActivityScenario.lambda$onActivity$2$ActivityScenario(ActivityScenario.java:660)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at androidx.test.core.app.ActivityScenario$$Lambda$4.run(Unknown Source:4)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at android.app.Instrumentation$SyncRunnable.run(Instrumentation.java:2266)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at android.os.Handler.handleCallback(Handler.java:938)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at android.os.Looper.loopOnce(Looper.java:201)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at android.os.Looper.loop(Looper.java:288)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at android.app.ActivityThread.main(ActivityThread.java:7839)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at java.lang.reflect.Method.invoke(Native Method)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+04-18 18:27:32.041 20489 20505 E TestRunner: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)
+04-18 18:27:32.041 20489 20505 E TestRunner: ----- end exception -----
+04-18 18:27:32.042 20489 20505 I TestRunner: finished: testReviews_WhenReviewsGetLoaded_areViewsVisible(com.anonymous.reviews.reviewmodule.BerlinTravelDestinationReviewsFragmentTest)

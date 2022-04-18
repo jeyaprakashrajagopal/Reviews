@@ -18,7 +18,6 @@ import org.junit.runner.RunWith
 @RunWith(AndroidJUnit4::class)
 class BerlinTravelDestinationReviewsFragmentTest
 {
-    private lateinit var repository: FakeRepositorySource
     private lateinit var viewModel : ReviewsViewModel
 
     private lateinit var factory: ReviewsMainFragmentFactory
@@ -26,8 +25,7 @@ class BerlinTravelDestinationReviewsFragmentTest
     @Before
     fun setUp() {
         factory = ReviewsMainFragmentFactory()
-        repository = FakeRepositorySource()
-        viewModel = ReviewsViewModel(repository.getReference())
+        viewModel = ReviewsViewModel(FakeRepositorySource.getReference())
     }
 
     @Test
@@ -40,7 +38,7 @@ class BerlinTravelDestinationReviewsFragmentTest
         onView(
             Matchers.allOf(
                 withId(R.id.reviewsContainerFragment),
-                withEffectiveVisibility(ViewMatchers.Visibility.VISIBLE)
+                withEffectiveVisibility(Visibility.VISIBLE)
             )
         )
     }

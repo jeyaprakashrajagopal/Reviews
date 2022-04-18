@@ -14,12 +14,11 @@ class ReviewsRepositoryTest {
 
     @Before
     fun setUp() {
-        repository = FakeRepositorySource()
     }
 
     @Test
     fun testReviewsRepository_WhenDataGetsRetrieved_isMessageMatching() = runBlocking {
-        val reviews = repository.getReviews(constants.QUERYMAP)
+        val reviews = FakeRepositorySource.getReviews(constants.QUERYMAP)
         assert(reviews.reviews[0].message == "I love Berlin")
     }
 

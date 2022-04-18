@@ -20,17 +20,15 @@ import org.junit.runner.RunWith
 class BerlinTravelDestinationReviewDetailsFragmentTest {
 
     lateinit var bundle: Bundle
-    lateinit var repository: FakeRepositorySource
     lateinit var viewModel: ReviewsViewModel
 
     @Before
     fun setUp()
     {
-        repository = FakeRepositorySource()
         bundle = Bundle()
-        bundle.putParcelable("selectedReview", repository.REVIEW_1)
+        bundle.putParcelable("selectedReview", FakeRepositorySource.REVIEW_1)
 
-        viewModel = ReviewsViewModel(repository)
+        viewModel = ReviewsViewModel(FakeRepositorySource)
     }
 
     @Test
@@ -57,7 +55,7 @@ class BerlinTravelDestinationReviewDetailsFragmentTest {
         onView(withId(R.id.reviewDetailsMessage)).check(matches(isDisplayed()))
         onView(withId(R.id.reviewDetailsMessage)).check(matches(
             withText(
-                repository.REVIEW_1.message
+                FakeRepositorySource.REVIEW_1.message
             )
         ))
     }
@@ -83,7 +81,7 @@ class BerlinTravelDestinationReviewDetailsFragmentTest {
         // Check if the textview got an update with it's visibility check
         onView(withId(R.id.reviewDetailsMessage)).check(matches(isDisplayed()))
         onView(withId(R.id.reviewDetailsMessage)).check(matches(
-                ViewMatchers.withText(
+                withText(
                     "I love Berlin"
                 )
         ))
